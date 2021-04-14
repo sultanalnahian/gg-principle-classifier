@@ -22,6 +22,25 @@ edgeMap = {
 				'then':'6',
 				'feel':'7',
 				'want':'8'
+			}
+
+principleMap = {
+				'attentive':'0',
+				'sensibleness':'1',
+				'law-abiding':'2',
+				'self-care':'3',
+				'cooperation':'4',
+				'assistiveness':'5',
+				'patience':'6',
+				'caution':'7',
+				'friendliness':'8',
+				'honesty':'9',
+				'humility':'10',
+				'politeness':'11',
+				'cleanliness':'12',
+				'respect':'13',
+				'enthusiasm':'14',
+				'courtesy':'15',
 				}
 ##### .edgelist utils and test #####
 
@@ -52,7 +71,7 @@ def mapWordsToUniqueIntegers( wordList ):
 mo = mapWordsToUniqueIntegers(l)
 #[d[x] for x in wordList]
 
-testCometEdges = {'data':[{'gg':0, 's1':'This is the sentence', 'e1':[('PersonX', 'wants', 'food'),('PersonX', 'feels', 'hungry')], 's2':'This is the second sentence', 'e2':[('PersonX', 'wants', 'money'),('PersonX', 'feels', 'greedy')]}, {'gg':1, 's1':'This is the first  sentence of the second image', 'e1':[('PersonX', 'wants', 'a car'),('PersonX', 'feels', 'adventurous')]} ]}
+testCometEdges = {'data':[{'gg':0, 'principle':'patience' 's1':'This is the sentence', 'e1':[('PersonX', 'wants', 'food'),('PersonX', 'feels', 'hungry')], 's2':'This is the second sentence', 'e2':[('PersonX', 'wants', 'money'),('PersonX', 'feels', 'greedy')]}, {'gg':1, 's1':'This is the first  sentence of the second image', 'e1':[('PersonX', 'wants', 'a car'),('PersonX', 'feels', 'adventurous')]} ]}
 
 def extractWordListFromStruct( struct ):	
 	st = '{}'.format(struct)
@@ -104,6 +123,11 @@ model.wv.save_word2vec_format(EMBEDDING_FILENAME)
 # Save model for later use
 model.save(EMBEDDING_MODEL_FILENAME)
 
-#TODO... for now run code below from project root to test node2vec on generated edgelist file:
+##### classification #####
 
-# python node2vec/src/main.py --input node2vec/graph/test2.edgelist --output node2vec/emb/test2.emd --weighted
+#TODO: For each GG object received from Nahian (containing gg id, principle classification, sentences and extracted triples):
+			#Generate a combined vector embedding of all triples
+				#Save in a file with principle,vector_embedding
+
+#		Read the file in
+#		Train the classifier (Train/Test/Val split)
