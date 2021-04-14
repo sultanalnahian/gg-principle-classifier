@@ -2,6 +2,7 @@ import networkx as nx
 from node2vec import Node2Vec
 import re
 import os
+import csv
 
 # edgeMap = {
 # 				'wanted':'0.1',
@@ -14,7 +15,9 @@ import os
 # 				'want':'0.8'
 # 				}
 
-edgeMap = {
+#Note: mapped using Nahian's file format
+
+reverseEdgeMap = {
 				'wanted':'1',
 				'needed':'2',
 				'seen as':'3',
@@ -25,6 +28,17 @@ edgeMap = {
 				'want':'8'
 			}
 
+edgeMap = {
+				'1','feel'
+				'2','then'
+				'3','want'
+				'4','is'
+				'5','feels'
+				'6','wants'
+				'7','needed'
+				'8','then'
+				'9','wanted'
+			}
 principleMap = {
 				'attentive':'0',
 				'sensibleness':'1',
@@ -54,25 +68,29 @@ def edgesToFile( edgeArray, fileName='test.edgelist' ):
 	fh.close()
 	return fileName
 
-fn = edgesToFile( testArray )
+#fn = edgesToFile( testArray )
 
 def fileToEdges( fileName ):
 	G = nx.read_edgelist(fileName, nodetype=int, data=(('weight',float),))
 	g = G.edges(data=True)
 	return g
 
-eg = fileToEdges( fn )
+#eg = fileToEdges( fn )
 
-l = ['apple','bat','apple','car','pet','bat','PersonX','food','hungry']
+#l = ['apple','bat','apple','car','pet','bat','PersonX','food','hungry']
 
-def mapWordsToUniqueIntegers( wordList ):
+def mapWordsToUniqueIntegers( wordList, cometOutput ):
+	for c in cometOutput:
+		for t in c['tuples']:
+			wordList.append(t[2]) #We need to create integers for phrases
 	d = dict([(y,x+1) for x,y in enumerate(sorted(set(wordList)))])
+	
 	return d
 
-mo = mapWordsToUniqueIntegers(l)
+#mo = mapWordsToUniqueIntegers(l)
 #[d[x] for x in wordList]
 
-testCometEdges = {'data':[{'gg':0, 'principle':'patience' 's1':'This is the sentence', 'e1':[('PersonX', 'wants', 'food'),('PersonX', 'feels', 'hungry')], 's2':'This is the second sentence', 'e2':[('PersonX', 'wants', 'money'),('PersonX', 'feels', 'greedy')]}, {'gg':1, 's1':'This is the first  sentence of the second image', 'e1':[('PersonX', 'wants', 'a car'),('PersonX', 'feels', 'adventurous')]} ]}
+testCometEdges = [{'gg':0, 'principle':'patience', 'tuples':[('PersonX', '1', 'food'),('PersonX', '2', 'hungry'),('PersonX', '3', 'money'),('PersonX', '4', 'greedy')]}, {'gg':1, 'principle':'respect', 'tuples':[('PersonX', '5', 'a car'),('PersonX', '6', 'adventurous')]} ]
 
 def extractWordListFromStruct( struct ):	
 	st = '{}'.format(struct)
@@ -80,22 +98,22 @@ def extractWordListFromStruct( struct ):
 	an_only = re.sub(r'[^A-Za-z0-9 ]+', '', st)
 	return an_only.split()
 
-so = extractWordListFromStruct(testCometEdges)
+#so = extractWordListFromStruct(testCometEdges)
 
-print(so)
+#print(so)
 
-do = mapWordsToUniqueIntegers(so)
+#do = mapWordsToUniqueIntegers(so)
 
-def convertCometEdgesToWeightAndFormat( edgeArray, edgeMapping, wordMap ):
+def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 	newArray = []
 	for triple in edgeArray:
-		newStringTriple = '{} {} {}'.format(wordMap[triple[0]],wordMap[triple[2]],edgeMapping[triple[1]]) #edgelist file construction requires strings
+		newStringTriple = '{} {} {}'.format(wordMap[triple[0]],triple[1],wordMap[triple[2]]) #edgelist file construction requires strings
 		newArray.append(newStringTriple)
 	return newArray
 
-wf = convertCometEdgesToWeightAndFormat(testCometEdges['data'][0]['e1'], edgeMap, do ) 
+#wf = convertCometEdgesToWeightAndFormat(testCometEdges[0]['tuples'],  do ) 
 
-edgesToFile(wf,'test2.edgelist')
+#edgesToFile(wf,'test2.edgelist')
 
 ##### node2vec utils and test #####
 
@@ -126,15 +144,15 @@ model.save(EMBEDDING_MODEL_FILENAME)
 
 ##### classification #####
 
-actualCometOutput = { 'data': [] }
+actualCometOutput = [] 
 #template = {'gg':-1, 'principle':'patience' 's1':'This is the sentence', 'e1':[('PersonX', 'wants', 'food'),('PersonX', 'feels', 'hungry')]}
-template = {'gg':-1, 'principle':'patience' 'tuples':[]}
+template = {'gg':-1, 'principle':'patience', 'tuples':[]}
 
 for filename in os.listdir('./data/class-comet-tuples'):
-	
-	with open(filename, 'r') as csvfile:
+	#print(filename)
+	with open('./data/class-comet-tuples/'+filename, 'r') as csvfile:
 		# creating a csv reader object
-		currentID = filename.replace('.csv')
+		currentID = filename.replace('.csv','')
 
 		csvreader = csv.reader(csvfile)
 
@@ -148,11 +166,37 @@ for filename in os.listdir('./data/class-comet-tuples'):
 		t['gg'] = currentID
 		t['principle'] = principleMap["patience"]  #!!!!!!!!!!!##################TODO####################
 
+
 		tups = []
 		for r in rows:
 			for idf,f in enumerate(r):
+				t1 = "They"
 				if idf == 0:
 					pass
+				else:
+					if idf <= 3:
+						t1 = "Others"
+					if f == 'none':
+						pass
+					else:
+						assert(f != 'none')
+						assert(idf != 0)
+						tups.append((t1,idf,f))
+
+		t['tuples'] = tups
+		actualCometOutput.append(t)
+
+#print(actualCometOutput)
+#print('----------------------------------')
+so = extractWordListFromStruct(actualCometOutput)
+#print(so)
+do = mapWordsToUniqueIntegers(so,actualCometOutput)
+#print(do)
+print(actualCometOutput[0]['tuples'])
+wf = convertCometEdgesToWeightAndFormat(actualCometOutput[0]['tuples'],  do ) 
+#print(wf)
+#edgesToFile(wf,'test3.edgelist')
+
 #TODO: For each GG object received from Nahian (containing gg id, principle classification, sentences and extracted triples):
 			#Generate a combined vector embedding of all triples
 				#Save in a file with principle,vector_embedding
