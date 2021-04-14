@@ -4,6 +4,23 @@ import re
 import os
 import csv
 
+import matplotlib.pyplot as plt
+
+from sklearn.manifold import TSNE
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegressionCV
+from sklearn.metrics import accuracy_score
+
+import os
+import networkx as nx
+import numpy as np
+import pandas as pd
+
+#from stellargraph.data import BiasedRandomWalk
+#from stellargraph import StellarGraph
+#from stellargraph import datasets
+#from IPython.display import display, HTML
+
 # edgeMap = {
 # 				'wanted':'0.1',
 # 				'needed':'0.2',
@@ -113,7 +130,7 @@ def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 
 #wf = convertCometEdgesToWeightAndFormat(testCometEdges[0]['tuples'],  do ) 
 
-edgesToFile(wf,'test3.edgelist')
+#edgesToFile(wf,'test3.edgelist')
 
 ##### node2vec utils and test #####
 
@@ -138,10 +155,32 @@ model = node2vec.fit(window=10, min_count=1, batch_words=4)  # Any keywords acce
 
 # Save embeddings for later use
 model.wv.save_word2vec_format(EMBEDDING_FILENAME)
+# print(model.wv.vectors)
 
-# Save model for later use
-model.save(EMBEDDING_MODEL_FILENAME)
+# # Save model for later use
+# model.save(EMBEDDING_MODEL_FILENAME)
+# # Retrieve node embeddings and corresponding subjects
+# node_ids = model.wv.index_to_key  # list of node IDs
+# node_embeddings = (
+#     model.wv.vectors
+# )  # numpy.ndarray of size number of nodes times embeddings dimensionality
+# node_targets = node_subjects[[int(node_id) for node_id in node_ids]]
 
+# tsne = TSNE(n_components=2)
+# node_embeddings_2d = tsne.fit_transform(node_embeddings)
+# # draw the points
+# alpha = 0.7
+# label_map = {l: i for i, l in enumerate(np.unique(node_targets))}
+# node_colours = [label_map[target] for target in node_targets]
+
+# plt.figure(figsize=(10, 8))
+# plt.scatter(
+#     node_embeddings_2d[:, 0],
+#     node_embeddings_2d[:, 1],
+#     c=node_colours,
+#     cmap="jet",
+#     alpha=alpha,
+# )
 ##### classification #####
 
 actualCometOutput = [] 
@@ -192,12 +231,14 @@ so = extractWordListFromStruct(actualCometOutput)
 #print(so)
 do = mapWordsToUniqueIntegers(so,actualCometOutput)
 #print(do)
-print(actualCometOutput[0]['tuples'])
+#print(actualCometOutput[0]['tuples'])
 wf = convertCometEdgesToWeightAndFormat(actualCometOutput[0]['tuples'],  do ) 
-#print(wf)
-#edgesToFile(wf,'test3.edgelist')
 
-#TODO: Iterate through every object in actualCometOutput, pass the edgelist to nx/n2v, take the embedding vector output
+#TODO: node2vec will generate embeddings for each node id (integer) (see demo .emb file)
+#Take the embedding for the corresponding nodeID and match it for all tuples in a single gg image's description sentences
+#Concatenate these vectors
+#Pad or just include the "none" values so the vectors are the right size
+#Associate principle for that set of discriptions with the newly created vector, save to file
 
 #TODO: For each GG object received from Nahian (containing gg id, principle classification, sentences and extracted triples):
 			#Generate a combined vector embedding of all triples
