@@ -113,7 +113,7 @@ def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 
 #wf = convertCometEdgesToWeightAndFormat(testCometEdges[0]['tuples'],  do ) 
 
-#edgesToFile(wf,'test2.edgelist')
+edgesToFile(wf,'test3.edgelist')
 
 ##### node2vec utils and test #####
 
@@ -121,7 +121,7 @@ EMBEDDING_FILENAME = './embeddings.emb'
 EMBEDDING_MODEL_FILENAME = './embeddings.model'
 
 # Create a graph
-graph = nx.read_weighted_edgelist('test2.edgelist')
+graph = nx.read_weighted_edgelist('test3.edgelist')
 
 # Precompute probabilities and generate walks
 node2vec = Node2Vec(graph, dimensions=64, walk_length=30, num_walks=200, workers=4)
@@ -196,6 +196,8 @@ print(actualCometOutput[0]['tuples'])
 wf = convertCometEdgesToWeightAndFormat(actualCometOutput[0]['tuples'],  do ) 
 #print(wf)
 #edgesToFile(wf,'test3.edgelist')
+
+#TODO: Iterate through every object in actualCometOutput, pass the edgelist to nx/n2v, take the embedding vector output
 
 #TODO: For each GG object received from Nahian (containing gg id, principle classification, sentences and extracted triples):
 			#Generate a combined vector embedding of all triples
