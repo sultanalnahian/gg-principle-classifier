@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two boys.,friendliness,none,none,none,young,none,none,none,happy,to grow up
+they are sitting at a table eating pizza.,friendliness,none,none,none,hungry,gets full,to eat,to go to the restaurant,full,to eat
+the first boy is looking at the second and smiling.,friendliness,none,none,none,interested,none,to be happy,none,happy,to have a conversation
+the second boy is looking ahead but also smiling.,friendliness,none,none,none,happy,none,none,none,happy,to smile
+behind them two girls are playing bowling.,friendliness,none,none,none,playful,gets exercise,to have fun,to go to the bowling field,happy,to have fun
+they are at a bowling alley.,friendliness,none,none,none,athletic,gets sweaty,to have fun,to drive to the bowling alley,happy,to go home
+the girl in the purple is holding a bowling ball.,friendliness,none,none,none,athletic,gets hit by ball,to win the game,to go to the bowling ball,happy,to win the game
+the girl in the pink rolls the ball.,friendliness,none,none,none,playful,none,to have fun,to go to the game,happy,to win the game
+the boys are sitting at the table.,friendliness,none,none,none,hungry,none,to eat,to walk to the table,happy,to eat
+"there are napkins , plates , and a cup of soda.",friendliness,none,none,none,clean,none,to be polite,none,satisfied,to clean up

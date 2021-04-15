@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy holding a dog.,friendliness,none,none,none,playful,gets licked,to have a dog,none,happy,to feed the dog
+he is walking over to an armchair.,friendliness,none,none,none,curious,gets exercise,to be in control,to be walking,relaxed,to sit down
+the armchair has a red and black checkered blanket and a magazine hanging over the top.,friendliness,none,none,none,lazy,none,to be comfortable,none,happy,to read
+the boy is grabbing the blanket.,friendliness,none,none,none,careless,gets yelled at,to be warm,to be playing,warm,to go to sleep
+he is looking down at the dog and smiling.,friendliness,none,none,none,happy,none,none,none,happy,to pet the dog
+the dog is squirming.,friendliness,none,none,none,playful,gets licked,none,none,annoyed,to get away
+there is a magazine on top of the couch.,friendliness,none,none,none,nerdy,none,none,to have a magazine,happy,to read
+there is a blue ball on the floor.,friendliness,none,none,none,playful,gets hurt,none,none,happy,to get up
+the lamp on the couch is on.,friendliness,none,none,none,careless,none,none,to have a lamp,satisfied,to turn it off

@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy standing over an aquarium.,friendliness,none,none,none,young,gets a lot of fish,none,none,happy,to go to the aquarium
+he is shaking a can of fish food into the aquarium.,friendliness,none,none,none,hungry,gets dirty,to eat fish,to have a can,happy,to eat the fish
+there are three goldfish in the aquarium.,friendliness,none,none,none,young,none,none,none,happy,to eat fish
+the boy is smiling at the fish.,friendliness,none,none,none,joyful,none,none,none,happy,to catch a fish
+the boy is waving.,friendliness,none,none,none,friendly,none,to greet the boy,none,happy,to get a drink
+there is a bookshelf behind the boy.,friendliness,none,none,none,intellectual,none,none,none,happy,to read
+there is a window behind the boy.,friendliness,none,none,none,curious,none,none,none,happy,to get out of the window
+the fish is eating the fish food.,friendliness,none,none,none,hungry,gets sick,to eat fish,to cook the fish,satisfied,to clean up

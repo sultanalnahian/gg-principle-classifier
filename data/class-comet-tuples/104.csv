@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy sitting in front of a bed.,cleanliness,none,none,none,young,gets scolded,none,none,happy,to sleep
+on the bed is folded stacks of clothes.,cleanliness,none,none,none,careless,none,none,none,tired,to sleep
+the boy is reaching out for one of the stacks.,cleanliness,none,none,none,greedy,gets yelled at,to get something,none,hopeful,to get it
+there is a man walking with his back turned to the bed.,cleanliness,none,none,none,scared,gets yelled at,to be alone,none,tired,to sleep
+he has a laundry basket in his hand.,cleanliness,none,none,none,organized,none,to clean up,to have laundry,tired,to clean up
+behind the boy is a large puzzle set half finished.,cleanliness,none,none,none,determined,none,none,none,happy,to solve the puzzle
+the boy has a set different set of puzzle pieces on the other side of the bed.,cleanliness,none,none,none,confused,gets yelled at,none,to be a puzzle maker,confused,to solve the puzzle
+the dresser is on the other side of the room.,cleanliness,none,none,none,curious,none,none,to walk towards the dresser,satisfied,to get rid of it
+the laundry basket still has clothes in it.,cleanliness,none,none,none,dirty,none,none,none,dirty,to clean up

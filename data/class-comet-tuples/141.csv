@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are three boys.,politeness,none,none,none,young,none,none,none,happy,to play
+they are sitting in a movie theatre.,politeness,none,none,none,bored,gets bored,to be entertained,to go to the theater,entertained,to watch a movie
+the first two boys are sitting in front of the third boy.,politeness,none,none,to play,playful,none,to play,to be playing,happy,to play
+the first boy is looking and saying something to the second.,politeness,none,none,to listen,social,gets yelled at,to be heard,none,happy,to get a response
+the second boy is frowning.,politeness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the third boy is leaning in to the first two boys.,politeness,none,none,to get away,curious,gets yelled at,to be a matchmaker,none,happy,to get a kiss
+there someone sitting in front of the boys.,politeness,none,none,to talk,friendly,none,to be in front of the boys,to walk over to the boys,happy,to talk
+the boy in the blue is smiling.,politeness,none,none,none,happy,none,none,none,happy,to be happy
+the boy in the green is frowning.,politeness,none,none,none,mean,none,none,none,sad,to get away from the boy
