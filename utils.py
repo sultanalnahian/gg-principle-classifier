@@ -16,6 +16,7 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
+import time
 #import torch
 
 # from cogdl import experiment
@@ -86,27 +87,22 @@ principleMap = {
 				'???':'19',
 				'none':'19'
 				}
+
 ##### .edgelist utils and test #####
 
 testArray = ['1 2 3','2 4 0.5']
 
 def edgesToFile( edgeArray, fileName='test.edgelist' ):
-	fh = open(fileName,'w')
+	fh = open('./data/edges/'+fileName,'w')
 	for ea in edgeArray:
 		fh.write(ea + '\n')
 	fh.close()
 	return fileName
 
-#fn = edgesToFile( testArray )
-
 def fileToEdges( fileName ):
 	G = nx.read_edgelist(fileName, nodetype=int, data=(('weight',float),))
 	g = G.edges(data=True)
 	return g
-
-#eg = fileToEdges( fn )
-
-#l = ['apple','bat','apple','car','pet','bat','PersonX','food','hungry']
 
 def mapWordsToUniqueIntegers( wordList, cometOutput ):
 	for c in cometOutput:
@@ -116,9 +112,6 @@ def mapWordsToUniqueIntegers( wordList, cometOutput ):
 	
 	return d
 
-#mo = mapWordsToUniqueIntegers(l)
-#[d[x] for x in wordList]
-
 testCometEdges = [{'gg':0, 'principle':'patience', 'tuples':[('PersonX', '1', 'food'),('PersonX', '2', 'hungry'),('PersonX', '3', 'money'),('PersonX', '4', 'greedy')]}, {'gg':1, 'principle':'respect', 'tuples':[('PersonX', '5', 'a car'),('PersonX', '6', 'adventurous')]} ]
 
 def extractWordListFromStruct( struct ):	
@@ -127,11 +120,6 @@ def extractWordListFromStruct( struct ):
 	an_only = re.sub(r'[^A-Za-z0-9 ]+', '', st)
 	return list(set(an_only.split()))
 
-#so = extractWordListFromStruct(testCometEdges)
-
-#print(so)
-
-#do = mapWordsToUniqueIntegers(so)
 
 def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 	newArray = []
@@ -140,64 +128,35 @@ def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 		newArray.append(newStringTriple)
 	return newArray
 
-#wf = convertCometEdgesToWeightAndFormat(testCometEdges[0]['tuples'],  do ) 
-
-#edgesToFile(wf,'test3.edgelist')
-
 ##### node2vec utils and test #####
 
-EMBEDDING_FILENAME = './embeddings.emb'
-EMBEDDING_MODEL_FILENAME = './embeddings.model'
+def embedEdgelist( fileName, dimensions=64, walk_length=30, num_walks=200, workers=16 ):
+	name = fileName.replace('.csv','')
+	EMBEDDING_FILENAME = './data/embeddings/' + name + '.emb'
+	#EMBEDDING_MODEL_FILENAME = './data/embeddings/embeddings.model'
 
-# Create a graph
-graph = nx.read_weighted_edgelist('test3.edgelist')
+	# Create a graph
+	graph = nx.read_weighted_edgelist( fileName )
+	# Precompute probabilities and generate walks
+	node2vec = Node2Vec(graph, dimensions=dimensions, walk_length=walk_length, num_walks=num_walks, workers=workers)
+	## if d_graph is big enough to fit in the memory, pass temp_folder which has enough disk space
+	# Note: It will trigger "sharedmem" in Parallel, which will be slow on smaller graphs
+	#node2vec = Node2Vec(graph, dimensions=64, walk_length=30, num_walks=200, workers=4, temp_folder="/mnt/tmp_data")
+	# Embed
+	model = node2vec.fit(window=10, min_count=1, batch_words=4)  # Any keywords acceptable by gensim.Word2Vec can be passed, `dimensions` and `workers` are automatically passed (from the Node2Vec constructor)
 
-# Precompute probabilities and generate walks
-node2vec = Node2Vec(graph, dimensions=64, walk_length=30, num_walks=200, workers=4)
+	# Save embeddings for later use
+	model.wv.save_word2vec_format(EMBEDDING_FILENAME)
 
-## if d_graph is big enough to fit in the memory, pass temp_folder which has enough disk space
-# Note: It will trigger "sharedmem" in Parallel, which will be slow on smaller graphs
-#node2vec = Node2Vec(graph, dimensions=64, walk_length=30, num_walks=200, workers=4, temp_folder="/mnt/tmp_data")
+	# # Save model for later use
+	# model.save(EMBEDDING_MODEL_FILENAME)
 
-# Embed
-model = node2vec.fit(window=10, min_count=1, batch_words=4)  # Any keywords acceptable by gensim.Word2Vec can be passed, `dimensions` and `workers` are automatically passed (from the Node2Vec constructor)
-
-# Look for most similar nodes
-# model.wv.most_similar('2')  # Output node names are always strings
-
-# Save embeddings for later use
-model.wv.save_word2vec_format(EMBEDDING_FILENAME)
-# print(model.wv.vectors)
-
-# # Save model for later use
-# model.save(EMBEDDING_MODEL_FILENAME)
-# # Retrieve node embeddings and corresponding subjects
-# node_ids = model.wv.index_to_key  # list of node IDs
-# node_embeddings = (
-#     model.wv.vectors
-# )  # numpy.ndarray of size number of nodes times embeddings dimensionality
-# node_targets = node_subjects[[int(node_id) for node_id in node_ids]]
-
-# tsne = TSNE(n_components=2)
-# node_embeddings_2d = tsne.fit_transform(node_embeddings)
-# # draw the points
-# alpha = 0.7
-# label_map = {l: i for i, l in enumerate(np.unique(node_targets))}
-# node_colours = [label_map[target] for target in node_targets]
-
-# plt.figure(figsize=(10, 8))
-# plt.scatter(
-#     node_embeddings_2d[:, 0],
-#     node_embeddings_2d[:, 1],
-#     c=node_colours,
-#     cmap="jet",
-#     alpha=alpha,
-# )
 ##### classification #####
 
 actualCometOutput = [] 
-#template = {'gg':-1, 'principle':'patience' 's1':'This is the sentence', 'e1':[('PersonX', 'wants', 'food'),('PersonX', 'feels', 'hungry')]}
+
 template = {'gg':-1, 'principle':'19', 'tuples':[]}
+mostRelations = 0
 
 for filename in os.listdir('./data/class-comet-tuples'):
 	#print(filename)
@@ -230,37 +189,34 @@ for filename in os.listdir('./data/class-comet-tuples'):
 				else:
 					if idf <= 4:
 						t1 = "Others"
-					if f == 'none':
-						pass
 					else:
-						assert(f != 'none')
 						assert(idf != 0)
 						tups.append((t1,idf-1,f)) #To account for new principle column
 
 		t['tuples'] = tups
-		#print(t)
+		if len(tups) > mostRelations:
+			mostRelations = len(tups)
+			print('New largest set of relations: {}'.format(len(tups))) #Relations range between 30 and 156
 		actualCometOutput.append(t)
-		#print(len(actualCometOutput))
 
-print(len(actualCometOutput))
-#print(actualCometOutput)
+
 print('----------------------------------')
 so = extractWordListFromStruct(actualCometOutput)
 #print(so)
 print('Number of unique words: {}'.format(len(so)))
 print('----------------------------------')
 do = mapWordsToUniqueIntegers(so,actualCometOutput)
-#print(do)
-#print(len(do))
-print('Word to integer map: {}'.format(do))
-#print(actualCometOutput[0]['tuples'])
+#print('Word to integer map: {}'.format(do))
+
+
+start = time.time()
 for w in actualCometOutput:
-	#print(w['tuples'])
-	print(w['gg'])
-	print(w['principle'])
 	wf = convertCometEdgesToWeightAndFormat(w['tuples'],  do )
-	print(wf)
-	#print(wf)
+	fn = '{}-{}.edgelist'.format(w['gg'],w['principle'])
+	edgesToFile(wf,fn)
+	embedEdgeList(fn)
+end = time.time()
+print('Generating embeddings took {} seconds.'.format(end - start))
 
 #TODO: Convert to compatible graph files (see /data/ subfolder) ... use the TU dataset format (https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets)
 #Use COGDL to run experiments
