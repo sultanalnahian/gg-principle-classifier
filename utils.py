@@ -16,10 +16,12 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
-#from stellargraph.data import BiasedRandomWalk
-#from stellargraph import StellarGraph
-#from stellargraph import datasets
-#from IPython.display import display, HTML
+import torch
+
+from cogdl import experiment
+from cogdl.data import Data
+from cogdl.datasets import BaseDataset, register_dataset
+#https://rusty1s.github.io/pycogdl/build/html/notes/create_dataset.html
 
 # edgeMap = {
 # 				'wanted':'0.1',
@@ -234,6 +236,20 @@ do = mapWordsToUniqueIntegers(so,actualCometOutput)
 #print(actualCometOutput[0]['tuples'])
 wf = convertCometEdgesToWeightAndFormat(actualCometOutput[0]['tuples'],  do ) 
 
+#TODO: Convert to compatible graph files (see /data/ subfolder) ... use the TU dataset format (https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets)
+#Use COGDL to run experiments
+
+#https://colab.research.google.com/drive/1I8a0DfQ3fI7Njc62__mVXUlcAleUclnb?usp=sharing#scrollTo=_5FBQ9gXpL-W
+#https://docs.dgl.ai/tutorials/blitz/2_dglgraph.html
+#https://docs.dgl.ai/tutorials/blitz/6_load_data.html#sphx-glr-tutorials-blitz-6-load-data-py
+#https://github.com/THUDM/cogdl/blob/master/examples/custom_dataset.py
+
+# TU dataset
+# .. automodule:: cogdl.datasets.tu_data
+#     :members:
+#     :undoc-members:
+#     :show-inheritance:
+
 #TODO: node2vec will generate embeddings for each node id (integer) (see demo .emb file)
 #Take the embedding for the corresponding nodeID and match it for all tuples in a single gg image's description sentences
 #Concatenate these vectors
@@ -247,58 +263,78 @@ wf = convertCometEdgesToWeightAndFormat(actualCometOutput[0]['tuples'],  do )
 #		Read the file in
 #		Train the classifier (Train/Test/Val split)
 
-import numpy as np
 
-y_true = np.array([[0,1,0],
-                   [0,1,1],
-                   [1,0,1],
-                   [0,0,1]])
+# # basic usage
+# experiment(task="node_classification", dataset="cora", model="gcn")
 
-y_pred = np.array([[0,1,1],
-                   [0,1,1],
-                   [0,1,0],
-                   [0,0,0]])
+# # set other hyper-parameters
+# experiment(task="node_classification", dataset="cora", model="gcn", hidden_size=32, max_epoch=200)
 
-def hamming_score(y_true, y_pred, normalize=True, sample_weight=None):
-    '''
-    Compute the Hamming score (a.k.a. label-based accuracy) for the multi-label case
-    https://stackoverflow.com/q/32239577/395857
-    '''
-    acc_list = []
-    for i in range(y_true.shape[0]):
-        set_true = set( np.where(y_true[i])[0] )
-        set_pred = set( np.where(y_pred[i])[0] )
-        #print('\nset_true: {0}'.format(set_true))
-        #print('set_pred: {0}'.format(set_pred))
-        tmp_a = None
-        if len(set_true) == 0 and len(set_pred) == 0:
-            tmp_a = 1
-        else:
-            tmp_a = len(set_true.intersection(set_pred))/\
-                    float( len(set_true.union(set_pred)) )
-        #print('tmp_a: {0}'.format(tmp_a))
-        acc_list.append(tmp_a)
-    return np.mean(acc_list)
+# # run over multiple models on different seeds
+# experiment(task="node_classification", dataset="cora", model=["gcn", "gat"], seed=[1, 2])
 
-if __name__ == "__main__":
-    print('Hamming score: {0}'.format(hamming_score(y_true, y_pred))) # 0.375 (= (0.5+1+0+0)/4)
+# # automl usage
+# def func_search(trial):
+#     return {
+#         "lr": trial.suggest_categorical("lr", [1e-3, 5e-3, 1e-2]),
+#         "hidden_size": trial.suggest_categorical("hidden_size", [32, 64, 128]),
+#         "dropout": trial.suggest_uniform("dropout", 0.5, 0.8),
+#     }
 
-    # For comparison sake:
-    import sklearn.metrics
+#CustomizedNodeClassificationDataset(BaseDataset)
+#experiment(task="node_classification", dataset="cora", model="gcn", seed=[1, 2], func_search=func_search)
+# import numpy as np
 
-    # Subset accuracy
-    # 0.25 (= 0+1+0+0 / 4) --> 1 if the prediction for one sample fully matches the gold. 0 otherwise.
-    print('Subset accuracy: {0}'.format(sklearn.metrics.accuracy_score(y_true, y_pred, normalize=True, sample_weight=None)))
+# y_true = np.array([[0,1,0],
+#                    [0,1,1],
+#                    [1,0,1],
+#                    [0,0,1]])
 
-    # Hamming loss (smaller is better)
-    # $$ \text{HammingLoss}(x_i, y_i) = \frac{1}{|D|} \sum_{i=1}^{|D|} \frac{xor(x_i, y_i)}{|L|}, $$
-    # where
-    #  - \\(|D|\\) is the number of samples  
-    #  - \\(|L|\\) is the number of labels 
-    #  - \\(y_i\\) is the ground truth  
-    #  - \\(x_i\\)  is the prediction.  
-    # 0.416666666667 (= (1+0+3+1) / (3*4) )
-    print('Hamming loss: {0}'.format(sklearn.metrics.hamming_loss(y_true, y_pred))) 
+# y_pred = np.array([[0,1,1],
+#                    [0,1,1],
+#                    [0,1,0],
+#                    [0,0,0]])
+
+# def hamming_score(y_true, y_pred, normalize=True, sample_weight=None):
+#     '''
+#     Compute the Hamming score (a.k.a. label-based accuracy) for the multi-label case
+#     https://stackoverflow.com/q/32239577/395857
+#     '''
+#     acc_list = []
+#     for i in range(y_true.shape[0]):
+#         set_true = set( np.where(y_true[i])[0] )
+#         set_pred = set( np.where(y_pred[i])[0] )
+#         #print('\nset_true: {0}'.format(set_true))
+#         #print('set_pred: {0}'.format(set_pred))
+#         tmp_a = None
+#         if len(set_true) == 0 and len(set_pred) == 0:
+#             tmp_a = 1
+#         else:
+#             tmp_a = len(set_true.intersection(set_pred))/\
+#                     float( len(set_true.union(set_pred)) )
+#         #print('tmp_a: {0}'.format(tmp_a))
+#         acc_list.append(tmp_a)
+#     return np.mean(acc_list)
+
+# if __name__ == "__main__":
+#     print('Hamming score: {0}'.format(hamming_score(y_true, y_pred))) # 0.375 (= (0.5+1+0+0)/4)
+
+#     # For comparison sake:
+#     import sklearn.metrics
+
+#     # Subset accuracy
+#     # 0.25 (= 0+1+0+0 / 4) --> 1 if the prediction for one sample fully matches the gold. 0 otherwise.
+#     print('Subset accuracy: {0}'.format(sklearn.metrics.accuracy_score(y_true, y_pred, normalize=True, sample_weight=None)))
+
+#     # Hamming loss (smaller is better)
+#     # $$ \text{HammingLoss}(x_i, y_i) = \frac{1}{|D|} \sum_{i=1}^{|D|} \frac{xor(x_i, y_i)}{|L|}, $$
+#     # where
+#     #  - \\(|D|\\) is the number of samples  
+#     #  - \\(|L|\\) is the number of labels 
+#     #  - \\(y_i\\) is the ground truth  
+#     #  - \\(x_i\\)  is the prediction.  
+#     # 0.416666666667 (= (1+0+3+1) / (3*4) )
+#     print('Hamming loss: {0}'.format(sklearn.metrics.hamming_loss(y_true, y_pred))) 
 
 # Let
 # @misc{KKMMN2016,
@@ -320,287 +356,3 @@ if __name__ == "__main__":
 # DS_edge_attributes.txt (m lines; same size as DS_A.txt): attributes for the edges in DS_A.txt
 # DS_node_attributes.txt (n lines): matrix of node attributes, the comma seperated values in the i-th line is the attribute vector of the node with node_id i
 # DS_graph_attributes.txt (N lines): regression values for all graphs in the data set, the value in the i-th line is the attribute of the graph with graph_id i
-
-from glob import glob
-import grakel
-from grakel import Graph
-from grakel import GraphKernel
-from grakel import datasets
-from graph_tool import load_graph
-from matplotlib import pylab as pl
-from sklearn import svm
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import GridSearchCV, StratifiedKFold
-from sklearn.model_selection import train_test_split
-from time import time
-from tqdm import tqdm
-import numpy as np
-import sys
-
-
-def get_data(graphs):
-
-    data = []
-    for idx, G in tqdm(enumerate(graphs)):
-        
-        D = []
-        D.append({ (e[0]+1, e[1]+1) for e in G.edges()})
-        
-        node_labels = {}
-        for u in G.nodes():
-            try:
-                try:
-                    n = op_map[G.node[u]['label']]
-                except:
-                    n = op_map[G.node[u]['label']] = len(op_map)
-
-                node_labels[int(u)+1] = [n]
-            except:
-                node_labels[int(u)+1] = [0]
-
-        D.append(node_labels)
-        
-        edge_labels = { (e[0]+1, e[1]+1): 1 for e in G.edges()}
-        D.append(edge_labels)
-
-        # print(node_labels)
-        D = Graph(D[0], node_labels=node_labels, edge_labels=None, graph_format='auto')
-        # for x in D:
-            # print(x)
-            # input()
-        # print(len(D))
-        # input()
-        data.append(D)
-
-
-    return data
-
-    op_map = {}
-
-    import sys
-    from utils import read_graphfile
-    G, y = read_graphfile('../examplegraph/', sys.argv[1])
-    method = sys.argv[2]
-    unique, counts = np.unique(y, return_counts=True)
-    print(unique, counts)
-    G = get_data(G)
-    
-    if method == 'wl':
-        for niter in [1,2,3,4,5]:
-            ultimate_accs = []
-            for _ in range(5):
-                kf = StratifiedKFold(n_splits=10, shuffle=True)
-                accs = []
-                for train_index, test_index in kf.split(G, y):
-            
-                    start = time()
-            
-                    G_train = [G[idx] for idx in train_index]
-                    y_train = [y[idx] for idx in train_index]
-                    G_test = [G[idx] for idx in test_index]
-                    y_test = [y[idx] for idx in test_index]
-            
-                    # Initialise a weifeiler kernel, with a dirac base_kernel.
-                    gk = GraphKernel(kernel=[{"name": "weisfeiler_lehman", "niter": niter},
-                                             {"name": "subtree_wl"}], normalize=True)
-                    
-                    # Calculate the kernel matrix.
-                    K_train = gk.fit_transform(G_train)
-                    K_test = gk.transform(G_test)
-                    
-                    # Initialise an SVM and fit.
-                    clf = svm.SVC(kernel='precomputed', C=1)
-                    params = {'C':[0.001, 0.01,0.1,1,10,100,1000]}
-                    clf = GridSearchCV(svm.SVC(kernel='precomputed'), params, cv=10, scoring='accuracy', verbose=0)
-                    # print('fitting ...')
-                    clf.fit(K_train, y_train)
-                    
-                    # Predict and test.
-                    # print('predicting ...')
-                    y_pred = clf.predict(K_test)
-                    # y_pred = np.random.randint(0, 3, len(y_test))
-                    
-                    # Calculate accuracy of classification.
-                    acc = accuracy_score(y_test, y_pred)
-                    accs.append(acc)
-                    
-                    end = time()
-                    # print("Accuracy:", str(round(acc*100, 2)), "% | Took:",
-                          # str(round(end - start, 2)), "s")
-            
-                print('wl', niter, np.mean(accs), np.std(accs))
-                ultimate_accs.append(np.mean(accs))
-            print(np.mean(ultimate_accs), np.std(ultimate_accs))
-    
-    if method == 'graphlet':
-        name = "graphlet_sampling"
-        ultimate_accs = []
-        for n_sample in [1, 2, 3, 4, 5]:
-            ultimate_accs = []
-            for _ in range(5):
-                accs = []
-                kf = StratifiedKFold(n_splits=10, shuffle=True)
-                for train_index, test_index in kf.split(G, y):
-            
-                    start = time()
-            
-                    G_train = [G[idx] for idx in train_index]
-                    y_train = [y[idx] for idx in train_index]
-                    G_test = [G[idx] for idx in test_index]
-                    y_test = [y[idx] for idx in test_index]
-            
-                    gk = GraphKernel(kernel=[{"name": name, "sampling":{'n_samples':n_sample}}], normalize=True)
-                    
-                    # Calculate the kernel matrix.
-                    K_train = gk.fit_transform(G_train)
-                    K_test = gk.transform(G_test)
-                    
-                    # Initialise an SVM and fit.
-                    # clf = svm.SVC(kernel='precomputed', C=1)
-                    params = {'C':[0.001, 0.01,0.1,1,10,100,1000]}
-                    clf = GridSearchCV(svm.SVC(kernel='precomputed'), params, cv=10, scoring='accuracy', verbose=0)
-                    clf.fit(K_train, y_train)
-                    
-                    # Predict and test.
-                    y_pred = clf.predict(K_test)
-                    
-                    # Calculate accuracy of classification.
-                    acc = accuracy_score(y_test, y_pred)
-                    accs.append(acc)
-                    
-                    end = time()
-                    # print("Accuracy:", str(round(acc*100, 2)), "% | Took:",
-                          # str(round(end - start, 2)), "s")
-            
-                print(name, np.mean(accs), np.std(accs))
-                ultimate_accs.append(np.mean(accs))
-            print(np.mean(ultimate_accs), np.std(ultimate_accs))
-
-    if method == 'shortest':
-        ultimate_accs = []
-        for _ in range(5):
-            name = "shortest_path"
-            kf = StratifiedKFold(n_splits=10, shuffle=True)
-            accs = []
-            for train_index, test_index in kf.split(G, y):
-        
-                start = time()
-        
-                G_train = [G[idx] for idx in train_index]
-                y_train = [y[idx] for idx in train_index]
-                G_test = [G[idx] for idx in test_index]
-                y_test = [y[idx] for idx in test_index]
-        
-                gk = GraphKernel(kernel=[{"name": name}], normalize=True)
-                
-                # Calculate the kernel matrix.
-                K_train = gk.fit_transform(G_train)
-                K_test = gk.transform(G_test)
-                
-                # Initialise an SVM and fit.
-                # clf = svm.SVC(kernel='precomputed', C=1)
-                params = {'C':[0.001, 0.01,0.1,1,10,100,1000]}
-                clf = GridSearchCV(svm.SVC(kernel='precomputed'), params, cv=10, scoring='accuracy', verbose=0)
-                clf.fit(K_train, y_train)
-                
-                # Predict and test.
-                y_pred = clf.predict(K_test)
-                
-                # Calculate accuracy of classification.
-                acc = accuracy_score(y_test, y_pred)
-                accs.append(acc)
-                
-                end = time()
-                # print("Accuracy:", str(round(acc*100, 2)), "% | Took:",
-                      # str(round(end - start, 2)), "s")
-        
-            # print(name, np.mean(accs), np.std(accs))
-            ultimate_accs.append(np.mean(accs))
-        print(np.mean(ultimate_accs), np.std(ultimate_accs))
-
-    if method == 'walk':
-        ultimate_accs = []
-        for _ in range(5):
-            print("random_walk")
-            kf = StratifiedKFold(n_splits=10, shuffle=True)
-            accs = []
-            for train_index, test_index in kf.split(G, y):
-        
-                start = time()
-        
-                G_train = [G[idx] for idx in train_index]
-                y_train = [y[idx] for idx in train_index]
-                G_test = [G[idx] for idx in test_index]
-                y_test = [y[idx] for idx in test_index]
-        
-                gk = GraphKernel(kernel=[{"name": "random_walk"}], normalize=True)
-                
-                # Calculate the kernel matrix.
-                K_train = gk.fit_transform(G_train)
-                K_test = gk.transform(G_test)
-                
-                # Initialise an SVM and fit.
-                # clf = svm.SVC(kernel='precomputed', C=1)
-                params = {'C':[0.001, 0.01,0.1,1,10,100,1000]}
-                clf = GridSearchCV(svm.SVC(kernel='precomputed'), params, cv=10, scoring='accuracy', verbose=0)
-                clf.fit(K_train, y_train)
-                
-                # Predict and test.
-                y_pred = clf.predict(K_test)
-                
-                # Calculate accuracy of classification.
-                acc = accuracy_score(y_test, y_pred)
-                accs.append(acc)
-                
-                end = time()
-                # print("Accuracy:", str(round(acc*100, 2)), "% | Took:",
-                      # str(round(end - start, 2)), "s")
-        
-            print(name, np.mean(accs), np.std(accs))
-            ultimate_accs.append(np.mean(accs))
-        print(np.mean(ultimate_accs), np.std(ultimate_accs))
-
-    if method == 'mlg':
-        ultimate_accs = []
-        for _ in range(5):
-            print("Multi Scale Laplacian")
-            kf = StratifiedKFold(n_splits=10, shuffle=True)
-            accs = []
-            for train_index, test_index in kf.split(G, y):
-        
-                start = time()
-        
-                G_train = [G[idx] for idx in train_index]
-                y_train = [y[idx] for idx in train_index]
-                G_test = [G[idx] for idx in test_index]
-                y_test = [y[idx] for idx in test_index]
-        
-                # gk = GraphKernel(kernel=[{"name": "multiscale_laplacian"}], normalize=True)
-                gk = grakel.MultiscaleLaplacianFast()
-                for x in G_train:
-                    assert type(x) == Graph
-                
-                # Calculate the kernel matrix.
-                K_train = gk.fit_transform(G_train)
-                K_test = gk.transform(G_test)
-                
-                # Initialise an SVM and fit.
-                # clf = svm.SVC(kernel='precomputed', C=1)
-                params = {'C':[0.001, 0.01,0.1,1,10,100,1000]}
-                clf = GridSearchCV(svm.SVC(kernel='precomputed'), params, cv=10, scoring='accuracy', verbose=0)
-                clf.fit(K_train, y_train)
-                
-                # Predict and test.
-                y_pred = clf.predict(K_test)
-                
-                # Calculate accuracy of classification.
-                acc = accuracy_score(y_test, y_pred)
-                accs.append(acc)
-                
-                end = time()
-                # print("Accuracy:", str(round(acc*100, 2)), "% | Took:",
-                      # str(round(end - start, 2)), "s")
-        
-            print(name, np.mean(accs), np.std(accs))
-            ultimate_accs.append(np.mean(accs))
-        print(np.mean(ultimate_accs), np.std(ultimate_accs))
