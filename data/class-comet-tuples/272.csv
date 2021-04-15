@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the girl is smiling.,friendliness,none,happy,none,friendly,none,none,none,happy,to kiss her
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile
+the friends are standing up.,friendliness,none,none,none,active,none,to be standing,none,happy,to go to the bathroom
+the girl is holding a ball.,friendliness,none,none,none,athletic,gets hit,to play,to be playing,happy,to play
+the boy is standing in the doorway.,friendliness,none,none,none,curious,none,none,none,good,to say hello

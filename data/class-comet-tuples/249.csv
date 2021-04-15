@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are leaves on the floor.,cleanliness,none,none,none,careless,none,none,none,sad,to clean up
+in front of the boy is a table.,cleanliness,none,none,to get to know personx,rude,none,to be in front of the boy,none,happy,to sit down
+on the table is a purple lamp and a plate.,cleanliness,none,none,none,curious,none,none,none,happy,to eat
+the plate and the table are covered in water.,cleanliness,none,none,none,careless,gets wet,none,to have water,full,to clean up
+the boy in green is looking back and saying something to the other boy.,cleanliness,none,none,to say something back,curious,none,to be noticed,none,happy,to say something else
+there is a dog sleeping on the couch.,cleanliness,none,none,none,sleepy,gets licked,none,none,tired,to wake up
+the boy is cleaning up leaves and glass.,cleanliness,none,none,none,clean,gets dirty,to clean up,to get cleaning supplies,tired,to clean up the mess

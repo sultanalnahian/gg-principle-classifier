@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the friends are standing up.,friendliness,none,none,none,active,none,to be standing,none,happy,to go to the bathroom
+there s a cat on the chair.,friendliness,none,none,none,playful,gets scratched,to play,none,happy,to play with the cat
+the chair is green.,friendliness,none,none,none,green,none,none,none,happy,to sit down
+the lap is on the table beside the green chair.,friendliness,none,none,none,playful,gets dirty,to be near the green chair,to be at the table,happy,to eat
+the cat is knitting a sweater.,friendliness,none,none,none,skilled,gets dirty,to be warm,to buy yarn,happy,to knit another sweater
+bothe friends are looking at the cat and are smiling.,friendliness,none,none,none,happy,none,none,none,happy,to pet the cat

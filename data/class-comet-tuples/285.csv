@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is standing up.,friendliness,none,none,none,active,gets hurt,to get up,none,good,to go to the bathroom
+the lady is sitting in a blue chair.,friendliness,none,none,none,relaxed,gets a tan,to sit down,none,relaxed,to get up
+the lady has her feet up.,friendliness,none,none,none,relaxed,gets tired,to be comfortable,none,happy,to relax
+the lady has a paper in her hands.,friendliness,none,none,none,curious,gets a paper cut,to read,none,nervous,to read the paper
+the lady is looking back at the boy.,friendliness,none,none,none,curious,none,to be noticed,none,happy,to talk to the boy
+the lady is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to be happy

@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the dog is standing up.,friendliness,none,none,none,active,none,to get up,none,happy,to walk
+the dog has on a shirt.,friendliness,none,none,none,clean,gets licked,to be clothed,to buy a shirt,clean,to wash the shirt
+the friends are looking at each other.,friendliness,none,none,none,curious,none,none,none,happy,to talk
+there s a bush beside the friends.,friendliness,none,none,none,playful,none,to be alone,to be in a bush,happy,to have fun
+the boy with the green is looking down at the dog.,friendliness,none,none,none,curious,none,to see the dog,none,happy,to pet the dog
+the boy with the yellow shirt is looking at the boy in the green and saying something.,friendliness,none,none,to say something back,curious,gets yelled at,to be noticed,none,happy,to say something
+the dogs shirt says bow wow.,friendliness,none,none,none,proud,none,to show appreciation,none,happy,to show off their new shirt

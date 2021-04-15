@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is frowning.,friendliness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the girl is frowning.,friendliness,none,none,none,annoyed,none,none,none,annoyed,to get away from the girl
+the girl is tossing a ball.,friendliness,none,none,none,playful,gets hit,to play,to go to the ball,happy,to play catch
+the boy has on head gear.,friendliness,none,none,none,prepared,none,to be prepared,none,prepared,to wear the gear
+the boy is wearing a blue and green baseball uniform.,friendliness,none,none,none,uniform,gets a uniform,to be a uniform,to put on the uniform,proud,to go to the game
+his arms are crossed.,friendliness,none,none,none,defensive,none,to be in charge,none,defensive,to be in control
+the girl is wearing a red baseball uniform.,friendliness,none,none,none,uniform,gets yelled at,to be a uniform,to put on the uniform,proud,to go to the game
+she has a baseball mitt on.,friendliness,none,none,none,playful,gets dirty,to play baseball,none,happy,to play baseball
+there is a fence behind them.,friendliness,none,none,none,cautious,none,none,none,safe,to keep them safe

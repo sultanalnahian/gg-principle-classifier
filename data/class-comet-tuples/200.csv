@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the mom is holding coffee.,friendliness,none,none,none,helpful,none,to be helpful,to buy coffee,happy,to drink
+they are in a dinner.,friendliness,none,none,none,hungry,eats,to eat,to cook,full,to eat
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile
+the man is holding a menu.,friendliness,none,none,none,organized,none,to be informed,to have a menu,hungry,to eat
+the man has a band aid.,friendliness,none,none,none,careful,gets a bandage,to be helpful,to get a band aid,relieved,to get bandage
+the band aid is on the mans nose.,friendliness,none,none,to thank personx,helpful,none,to be helpful,to get a bandage,helpful,to apply cream
+there is a cup of coffee in front of the man.,friendliness,none,none,none,friendly,none,to be polite,to get a cup,happy,to get a drink
+the boy is looking at the mans menu.,friendliness,none,none,none,curious,none,to be informed,to be in the presence of the boy,satisfied,to eat
+they are sitting at a counter.,friendliness,none,none,none,hungry,none,to eat,none,hungry,to eat

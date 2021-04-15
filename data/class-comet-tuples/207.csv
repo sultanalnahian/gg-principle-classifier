@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+they are in the store.,friendliness,none,none,none,curious,none,to buy something,to go to the store,bored,to go home
+the father is smiling.,friendliness,none,none,none,happy,none,none,none,happy,to be happy
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile
+the father and son are by the bananas.,friendliness,none,none,none,crazy,none,none,none,angry,to be a good parent
+there are tomatoes on the table.,friendliness,none,none,none,hungry,none,none,none,hungry,to eat tomatoes
+there s a shopping cart behind them.,friendliness,none,none,none,careless,none,none,none,happy,to buy something
+the father is putting apples into a little bag.,friendliness,none,none,none,hungry,none,to eat apples,to buy apples,happy,to eat apples
+the boy is holding up something to his father.,friendliness,none,none,to help him,responsible,gets yelled at,to be helpful,to be a child,happy,to give it to his father
+there are vegetables lined up behind them.,friendliness,none,none,none,healthy,none,none,none,satisfied,to eat

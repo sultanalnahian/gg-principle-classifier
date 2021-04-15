@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the is smiling.,friendliness,none,none,none,happy,none,none,none,happy,to smile
+the girl is smiling.,friendliness,none,happy,none,friendly,none,none,none,happy,to kiss her
+they are indoors.,friendliness,none,none,none,safe,gets cold,to be safe,none,safe,to go outside
+there s a cat by the chair.,friendliness,none,none,none,playful,none,to be entertained,none,happy,to play
+there is a tv on a table.,friendliness,none,none,none,lazy,watches tv,to be entertained,to buy a tv,happy,to watch a show
+there s a game console sitting under it.,friendliness,none,none,none,playful,none,to play games,none,happy,to play games
+the girl is holding a game controller in her hand.,friendliness,none,none,none,playful,gets yelled at,to play,to have a controller,happy,to play the game
+the other game controller is on the floor in front of the boy.,friendliness,none,none,to play,playful,gets yelled at,none,to be playing,happy,to play the game
+the boy is opening up his bookbag.,friendliness,none,none,none,curious,none,to get something out of the bag,to be a bookbag,satisfied,to read
+he is looking at the girl and smiling.,friendliness,none,happy,to smile back,interested,gets a kiss,none,none,happy,to flirt

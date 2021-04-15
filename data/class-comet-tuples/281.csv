@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the soap is yellow.,cleanliness,none,none,none,dirty,none,none,none,dirty,to wash his hands
+the soap has eyes.,cleanliness,none,none,none,clean,none,none,none,happy,to wash their face
+the soap is in water.,cleanliness,none,none,none,wet,gets wet,none,none,wet,to clean up
+the rag is pink.,cleanliness,none,none,none,dirty,none,none,none,embarrassed,to clean up
+the soaps eyes are wide.,cleanliness,none,none,none,sad,none,none,none,sad,to be comforted
+his mouth is open.,cleanliness,none,none,none,talkative,none,to speak,none,relieved,to eat
+he is sinking into the water.,cleanliness,none,none,none,scared,gets wet,none,none,scared,to swim
+the pink rag is swimming over the soap.,cleanliness,none,none,none,dirty,gets wet,none,to get soap,dirty,to clean up
+his eyes are closed and he is paddling hard.,cleanliness,none,none,none,determined,gets wet,to be the best,none,tired,to get a towel

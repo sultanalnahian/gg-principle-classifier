@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy has a sponge.,cleanliness,none,none,none,helpful,none,to clean up,none,happy,to clean up
+the boy is standing in front of the table.,cleanliness,none,none,none,bold,gets yelled at,to eat,to walk to the table,happy,to eat
+there a piece of pie on the table.,cleanliness,none,none,none,hungry,gets dirty,to eat,to have a piece of pie,full,to eat
+there s a green bottle on the table.,cleanliness,none,none,none,happy,none,none,none,happy,to drink
+the a plate of pie on the table.,cleanliness,none,none,none,hungry,gets dirty,to eat,to buy pie,full,to eat
+behind the boy is a fridge.,cleanliness,none,none,none,hungry,none,none,none,satisfied,to eat
+the boy is smiling.,cleanliness,none,none,none,friendly,none,none,none,happy,to smile

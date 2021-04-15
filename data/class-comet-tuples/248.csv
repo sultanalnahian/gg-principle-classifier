@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is eating pizza.,patience,none,none,none,hungry,gets full,to eat,to buy pizza,full,to eat some more
+there girl is eating pizza.,patience,none,none,none,hungry,gets full,to eat,to buy pizza,full,to eat some more
+the mom is eating pizza.,patience,none,none,none,hungry,gets full,to eat,to buy the pizza,full,to eat
+there s pizza on the table.,patience,none,none,none,hungry,gets full,to eat,to buy pizza,full,to eat
+the boy in the green shirt has a hamburger and fries in front of him.,patience,none,none,none,hungry,gets dirty,to eat,to buy the fries,full,to eat
+he is eating the fries.,patience,none,none,none,hungry,gets fat,to eat,to buy fries,satisfied,to eat more
+they are all wearing the same shirts.,patience,none,none,none,stylish,gets complimented,to be fashionable,to buy the same shirt,comfortable,to go out
+the girl is reaching for her drink.,patience,none,none,none,thirsty,gets drunk,to drink,to be thirsty,satisfied,to drink

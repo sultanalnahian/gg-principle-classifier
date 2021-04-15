@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the students are in a classroom.,attentiveness,students are taught,none,none,studious,gets yelled at,to teach,to be in class,happy,to teach
+the teacher is holding a picture.,attentiveness,none,none,none,helpful,none,to show them something,to get a camera,happy,to show the picture to the class
+the teacher is pointing at the picture.,attentiveness,none,none,none,curious,none,to show them something,none,satisfied,to teach
+the students are looking at the picture.,attentiveness,none,none,none,curious,none,to see the picture,to take the picture,interested,to see what they think
+the teacher is smiling.,attentiveness,none,none,none,friendly,none,none,none,happy,to teach
+there s a shelf lined with books against the wall.,attentiveness,none,none,none,studious,none,none,none,happy,to read
+a plant sits atop the shelf.,attentiveness,none,none,none,patient,none,to be in charge,none,happy,to plant something
+there s a board with papers on it and posters on the wall.,attentiveness,none,none,none,curious,none,none,none,interested,to get a good grade

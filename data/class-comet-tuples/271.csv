@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the lady has on a headset.,confidence,none,none,none,smart,none,to be able to hear,to buy headphones,happy,to listen to music
+the boy is standing up.,confidence,none,none,none,active,gets hurt,to get up,none,good,to go to the bathroom
+the lady has a clipboard.,confidence,none,none,none,prepared,none,to be helpful,none,prepared,to do a good job
+the boy is grabbing a red curtain.,confidence,none,none,none,careless,gets yelled at,to decorate,none,satisfied,to clean up
+the boy is peeking around the curtain.,confidence,none,none,none,curious,gets yelled at,to see what 's going on,none,sneaky,to get away
+there is a sign on the wall that reads wardrobe.,confidence,none,none,none,curious,none,none,none,interested,to be noticed
+the boy is frowning.,confidence,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
