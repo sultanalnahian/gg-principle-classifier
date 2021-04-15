@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the living room.,attentiveness,none,none,none,present,none,none,to walk to the room,happy,to play
+there are two chairs and a table.,attentiveness,none,none,none,capable,none,to sit down,none,happy,to sit down
+there is a lamp on the table.,attentiveness,none,none,none,bright,none,none,none,happy,to get a lamp
+there s a remote on the table.,attentiveness,none,none,none,lazy,none,to watch tv,none,happy,to watch tv
+the boy is turning off the lamp.,attentiveness,none,none,none,tired,gets yelled at,to be alone,none,relieved,to go to sleep
+the boy is smiling.,attentiveness,none,none,none,friendly,none,none,none,happy,to smile
+the boy has one hand on the chair.,attentiveness,none,none,none,controlling,gets yelled at,to be safe,none,happy,to get up

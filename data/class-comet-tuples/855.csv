@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are sitting at computers.,attentiveness,none,none,none,smart,gets yelled at,to be entertained,to have a computer,happy,to play games
+the boy in green is smiling.,attentiveness,none,none,none,friendly,none,none,none,happy,to smile
+the girl is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the girl
+the girl on the computer beside him is frowning.,attentiveness,none,none,none,annoyed,gets yelled at,none,none,annoyed,to ask her out
+the boy in the back is frowning.,attentiveness,none,none,none,mean,none,none,none,annoyed,to get away from the boy

@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the students are in class.,friendliness,none,none,none,studious,gets yelled at,none,to be in class,happy,to listen to the teacher
+they have books on their desk.,friendliness,none,none,none,studious,none,to read,to have a book,prepared,to read
+the students are frowning.,friendliness,none,none,none,mean,none,none,none,annoyed,to get away from the students
+the girl has her hand over her mouth.,friendliness,none,none,to run away,mean,gets slapped,to be mean,none,ashamed,to run away
+the boy is looking at the girl and frowning.,friendliness,none,none,to smile,curious,gets yelled at,none,none,happy,to smile
+they all have books on their desks.,friendliness,none,none,none,studious,none,to learn,none,smart,to read

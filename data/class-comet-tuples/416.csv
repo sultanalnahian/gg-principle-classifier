@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are three boys and two girls.,friendliness,none,none,none,young,none,none,none,happy,to have fun
+they are all sitting around a table with plates and cups in front of them.,friendliness,none,none,none,hungry,gets dirty,to eat,to be at a table,happy,to eat
+there is a plate in the middle of the table and a orange pitcher.,friendliness,none,none,none,hungry,gets dirty,none,to be at the table,full,to eat
+the first boy is standing and reaching towards the plate.,friendliness,none,none,none,eager,gets yelled at,to eat,to be playing,happy,to eat
+the second boy is picking up something off the plate.,friendliness,none,none,none,curious,gets dirty,to eat,to be playing,happy,to eat
+the other kids are eating something.,friendliness,none,none,none,hungry,gets full,to eat,to have food,full,to eat
+they are outside.,friendliness,none,none,none,outdoors,gets exercise,to have fun,to be outside,happy,to go to the store

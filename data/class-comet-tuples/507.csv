@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+it s raining outside.,attentiveness,none,none,none,wet,gets wet,none,none,wet,to get a umbrella
+they are waiting on the school bus.,attentiveness,none,none,none,patient,gets late,to get to school on time,to get to the bus stop,bored,to go to school
+the boy in purple is holding an umbrella.,attentiveness,none,none,none,careful,gets wet,to be careful,none,happy,to keep the boy dry
+the girl has her shirt on her head.,attentiveness,none,none,none,attractive,gets slapped,to be clothed,to grab the shirt,attractive,to show off the shirt
+the boy in yellow is holding his book on his head.,attentiveness,none,none,none,studious,none,to read,none,smart,to read

@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boys are in the kitchen.,attentiveness,none,none,none,hungry,none,to eat,to go to the kitchen,hungry,to eat
+the boy in the green jacket is standing over the trash can.,attentiveness,none,none,none,active,gets dirty,none,none,happy,to clean up the trash
+the boy in the green jacket is frowning.,attentiveness,none,none,none,mean,none,none,none,annoyed,to get away from the boy
+the boy in the green has his hand in the air.,attentiveness,none,none,none,playful,gets hit,to play,none,happy,to play
+the boy in the green jacket is throwing the soda in the trash can.,attentiveness,none,none,none,careless,gets dirty,to be mean,to pick up the soda can,happy,to clean up the mess
+the boy in the blue is standing near the counter.,attentiveness,none,none,none,curious,none,to buy something,none,happy,to buy something
+the boy in the blue is pointing at the canned of soda.,attentiveness,none,none,none,curious,none,to be a good citizen,none,happy,to get a soda
+the boy in the blue is frowning.,attentiveness,none,none,none,annoyed,none,none,none,sad,to get away from the boy

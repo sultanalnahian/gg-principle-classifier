@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy sitting on a couch.,assistiveness,none,none,none,young,none,none,none,happy,to get up
+he has a game controller in his hand and is looking at the tv.,assistiveness,none,none,none,bored,none,to be entertained,to have a controller,entertained,to play the game
+the mother is looking at him.,assistiveness,none,none,none,curious,none,to see the child,none,happy,to talk
+she is wiping a plate dry.,assistiveness,none,none,none,clean,gets dirty,to be clean,to get a plate,satisfied,to eat
+behind her the dog is scratching at the door.,assistiveness,none,none,none,curious,gets licked,to get inside,none,happy,to get a dog
+the leash is hanging up beside the door.,assistiveness,none,none,none,careless,none,to be safe,to have a leash,happy,to walk the dog

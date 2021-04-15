@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy and his mother sitting on a couch.,attentiveness,none,none,none,young,none,to be a boy,none,happy,to play with the boy
+there is a tv in front of them.,attentiveness,none,none,none,interested,none,to be entertained,none,happy,to be entertained
+the boy is holding the remote and is scratching his head.,attentiveness,none,none,none,curious,gets scratched,to be entertained,none,happy,to turn on the tv
+the mother is looking at the boy.,attentiveness,none,none,none,curious,none,to see the boy,none,happy,to talk to the boy
+she is shrugging both arms.,attentiveness,none,none,none,indifferent,none,none,none,indifferent,to be left alone
+the mother is frowning.,attentiveness,none,none,none,angry,none,none,none,sad,to cry
+the boy is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy

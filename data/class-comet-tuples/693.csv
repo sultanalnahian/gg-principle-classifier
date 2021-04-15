@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is covered in the mud.,cleanliness,none,none,none,dirty,gets dirty,none,none,dirty,to get up
+the boy is standing in the doorway.,cleanliness,none,none,none,curious,none,none,none,good,to say hello
+the boy is looking at his mother.,cleanliness,none,none,to smile,curious,none,to see his mother,none,happy,to talk to mother
+the boy is frowning with his mouth open.,cleanliness,none,none,none,mean,none,none,none,annoyed,to say something
+the boy s mother is looking at the boy.,cleanliness,none,none,to smile,curious,none,to see the boy,none,happy,to talk to the boy
+the mother is frowning.,cleanliness,none,none,none,angry,none,none,none,sad,to cry

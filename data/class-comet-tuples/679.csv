@@ -1,0 +1,12 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are in the classroom.,attentiveness,none,none,none,studious,gets yelled at,to learn,to be in class,happy,to teach
+the kids are in line by the table.,attentiveness,none,none,none,patient,gets yelled at,to eat,to go to the table,happy,to eat
+there are books on the table.,attentiveness,none,none,none,intellectual,none,none,none,smart,to read
+the kids are frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to be a good parent
+the boy at the table is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to eat
+the boy at the is holding his hand out.,attentiveness,none,none,to thank personx,caring,gets yelled at,to be helpful,to be holding hands,happy,to be helpful
+the boy is holding a blue folder.,attentiveness,none,none,none,careful,none,to read,none,happy,to read the folder
+the teacher is standing at the wall.,attentiveness,none,none,none,curious,gets yelled at,none,none,happy,to teach
+the teacher is looking over at the table.,attentiveness,none,none,none,curious,none,to see what is going on,none,annoyed,to ask a question
+the teacher is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to teach
+the teacher is pointing in another direction.,attentiveness,none,none,none,helpful,none,to be helpful,to be in a different direction,helpful,to teach

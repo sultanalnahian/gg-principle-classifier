@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the friends are in the park.,friendliness,none,none,none,playful,gets exercise,to have fun,to go to the park,happy,to have fun
+the boy in green is holding a toy car.,friendliness,none,none,none,playful,gets dirty,to play with the toy,to have a toy,happy,to play with the toy
+the boy in red is holding a frisbee.,friendliness,none,none,none,playful,gets hit by the ball,to play,to go to the park,happy,to play with the frisbee
+the boy in red is smiling at his friend.,friendliness,none,happy,to smile back,friendly,none,to be happy,none,happy,to say hello

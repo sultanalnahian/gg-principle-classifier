@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the kitchen.,cleanliness,none,none,none,hungry,none,to eat,to walk to the kitchen,hungry,to eat
+the boy is drying his hand with the paper towels.,cleanliness,none,none,none,careful,none,to dry off,to get the towel,satisfied,to dry off
+there is an empty paper towel rack on the wall.,cleanliness,none,none,none,lazy,none,none,none,annoyed,to clean up
+the curtains are closed.,cleanliness,none,none,none,tired,gets yelled at,to be alone,to have a curtain,safe,to sleep

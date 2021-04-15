@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the friends are all smiling.,friendliness,none,none,none,happy,none,none,none,happy,to have a good time
+the friends are all gathered around the table.,friendliness,none,none,to have a good time,social,none,to have a good time,to be invited,happy,to eat
+there is a glass of milk on the table.,friendliness,none,none,none,thirsty,none,to drink milk,to buy milk,satisfied,to drink the milk
+there are two girls and two boys.,friendliness,none,none,none,young,none,none,none,happy,to have a good time
+the boy and one girl are standing beside the table.,friendliness,none,happy,to eat,social,none,to eat,to walk to the table,happy,to eat
+one boy and one girl are sitting down.,friendliness,none,none,none,friendly,none,to be alone,to be in a room,happy,to talk

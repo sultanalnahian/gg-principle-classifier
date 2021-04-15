@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is walking on the sidewalk.,friendliness,none,none,none,brave,gets exercise,to get to the other side,to be walking,happy,to get to their destination
+the lady is watering her plants.,friendliness,none,none,none,helpful,gets dirty,to be helpful,to get water,satisfied,to get water
+the lady sees the boy and waves at him.,friendliness,none,happy,to say hello,friendly,smiles,to greet the boy,none,happy,to say hello
+the lady is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to be happy
+the boy waves back.,friendliness,none,happy,to say hello,friendly,waves,to greet the boy,none,happy,to say hello
+the boy has a book in his hands.,friendliness,none,none,none,studious,none,to read,none,smart,to read
+the boy is smiling back at the lady.,friendliness,none,happy,to smile back,friendly,none,to be friendly,none,happy,to say hello
+the grandmother has pink and purple flowers in her garden.,friendliness,none,none,none,caring,gets dirty,to have a pretty garden,to buy flowers,happy,to grow flowers

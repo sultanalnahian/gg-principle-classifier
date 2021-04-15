@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+they are in the cafeteria.,assistiveness,none,none,none,hungry,eats,to eat,to go to the cafeteria,hungry,to eat
+the boys have a lunch tray.,assistiveness,none,none,none,hungry,gets dirty,to eat,to go to the kitchen,full,to eat
+the boys are standing by utensils.,assistiveness,none,none,none,helpful,none,to eat,none,satisfied,to eat
+the boy in the green is frowning.,assistiveness,none,none,none,mean,none,none,none,sad,to get away from the boy
+"the boy in the green is grabbing napkins , the boy in the orange is looking at.",assistiveness,none,none,none,curious,none,to be helpful,none,happy,to eat

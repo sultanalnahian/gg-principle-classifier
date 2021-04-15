@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is holding a banana.,cleanliness,none,none,none,caring,gets dirty,to eat,none,satisfied,to eat
+the mom has her hand over the bowl.,cleanliness,none,none,none,greedy,gets yelled at,to eat,to be hungry,guilty,to eat
+the boy has his hand over his head.,cleanliness,none,none,none,mean,gets caught,to be sneaky,none,sneaky,to run away
+the mom is frowning.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to get a drink
+the boy is combing his hair.,cleanliness,none,none,none,caring,gets dirty,to have a clean hair,to get a brush,happy,to comb the hair
+the mother is sitting beside him at the table.,cleanliness,none,happy,to eat,caring,gets dirty,to be close to the son,to walk to the table,happy,to talk
+she is frowning and looking at her bowl.,cleanliness,none,none,none,annoyed,none,to eat,none,annoyed,to eat
+the father is standing beside the boy holding his bowl of cereal.,cleanliness,none,none,none,caring,gets dirty,to be helpful,to walk over to the boy,happy,to eat the cereal

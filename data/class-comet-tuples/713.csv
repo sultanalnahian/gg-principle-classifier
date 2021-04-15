@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy and a girl sitting in a booth.,friendliness,none,none,none,young,gets a date,to eat,to be in a booth,happy,to eat
+"the boy has a plate with a hamburger , fries and a drink in front of him.",friendliness,none,none,none,hungry,gets dirty,to eat,to go to the kitchen,full,to eat
+"the girl has a grilled cheese , tomato soup and salad in front of her.",friendliness,none,none,none,hungry,gets dirty,to eat,to go to the store,full,to eat
+they are both smiling.,friendliness,none,none,none,happy,none,none,none,happy,to smile
+the boy has his hand on his napkin.,friendliness,none,none,none,hungry,gets dirty,to be polite,none,happy,to eat
+the girl is grabbing the app.,friendliness,none,none,none,curious,gets yelled at,to play,to have a phone,excited,to play
+there is a sign behind the boy that says today s special.,friendliness,none,none,none,special,none,none,none,happy,to be a good leader

@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there is a woman , a boy , and a man , they are sitting at a.",friendliness,none,none,none,feminine,none,to be a man,none,happy,to be a good son
+there is a plate in front of each person.,friendliness,none,none,to eat,generous,none,to be a leader,to be a leader,happy,to eat
+the woman is holding a bowl of something in front of the boy and he is scooping.,friendliness,none,none,to eat,much as he can,gets dirty,to eat,to be hungry,full,eating
+the man is also holding a bowl and he is scooping something out of it.,friendliness,none,none,none,hungry,gets dirty,to eat,to have a bowl,full,to eat
+there is a plate of meatloaf in the middle of the table.,friendliness,none,none,none,hungry,gets dirty,to eat,to eat,full,to eat

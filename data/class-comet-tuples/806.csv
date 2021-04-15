@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the brother and sister have plates in their hands.,assistiveness,none,none,none,hungry,gets dirty,to eat,to have food,full,to eat
+the brother is smiling.,assistiveness,none,none,none,friendly,none,none,none,happy,to be happy
+the sister is smiling.,assistiveness,none,none,none,friendly,none,none,none,happy,to be happy
+there is a bowl of salad on the table.,assistiveness,none,none,none,hungry,gets full,to eat,to buy salad,full,to eat
+they are both moving towards the sink.,assistiveness,none,none,none,determined,none,to clean up,none,satisfied,to clean up
+they are both smiling.,assistiveness,none,none,none,happy,none,none,none,happy,to smile

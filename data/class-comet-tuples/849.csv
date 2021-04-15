@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy in the green is frowning.,assistiveness,none,none,none,mean,none,none,none,sad,to get away from the boy
+the boy in the blue is frowning.,assistiveness,none,none,none,annoyed,none,none,none,sad,to get away from the boy
+the boy in the blue is holding a hamster.,assistiveness,none,none,none,smart,none,none,none,happy,to teach the boy how to play
+the dad is holding a cage.,assistiveness,none,none,none,caring,gets bitten,to be a cage owner,to find a cage,happy,to keep the cage
+they are standing in the yard.,assistiveness,none,none,none,active,gets exercise,to be outdoors,to walk to the yard,happy,to go inside
+the boy in the green has his arms crossed.,assistiveness,none,none,none,mean,none,to be safe,none,happy,to run away

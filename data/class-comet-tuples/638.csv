@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the bathroom.,cleanliness,none,none,none,scared,none,to be alone,to go to the bathroom,relieved,to wash his hands
+the boy is washing his hands in the sink.,cleanliness,none,none,none,clean,gets dirty,to clean,to get the water,clean,to dry hands
+the boy has his mouth wide opened.,cleanliness,none,none,none,rude,gets slapped,to be rude,none,embarrassed,to eat
+the grandmother is in the dining room.,cleanliness,none,none,none,hungry,eats,to eat,to go to the dining room,happy,to eat
+the grandmother is setting the table.,cleanliness,none,none,none,helpful,gets dirty,to serve the food,to buy the food,happy,to eat
+there is another person holding the bowl.,cleanliness,none,none,none,responsible,none,to eat,to be a spoon holder,satisfied,to eat
+the boy is frowning.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy

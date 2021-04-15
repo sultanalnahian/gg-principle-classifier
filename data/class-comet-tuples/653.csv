@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are sitting at the lunch table.,politeness,none,none,none,hungry,eats,to eat,to go to the lunch table,happy,to eat
+the boy in the middle is grinning.,politeness,none,none,none,amused,none,none,none,happy,to laugh
+the boy has snacks for lunch.,politeness,none,none,none,hungry,gets full,to eat,to go to the store,full,to eat
+the girl is looking at the boy.,politeness,none,none,to smile,curious,gets a kiss,to be noticed,none,happy,to flirt
+the girl is frowning.,politeness,none,none,none,annoyed,none,none,none,annoyed,to get away from the girl
+the other boy is looking at the boy in the middle.,politeness,none,none,to talk to personx,curious,none,to be noticed,none,curious,to talk to the boy
+the other boy is frowning.,politeness,none,none,none,annoyed,none,none,none,annoyed,to get away from the situation

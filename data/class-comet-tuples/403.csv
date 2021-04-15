@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are three boys and two girls , they are all sitting at a table.",friendliness,none,none,none,young,none,to eat,to be at school,happy,to eat
+"there is a pizza on the table , each person has a plate and a cup in.",friendliness,none,none,none,generous,none,to eat,to have a plate,full,to eat
+"the first boy is taking a bite of pizza , the second is reaching for a slice.",friendliness,none,none,none,hungry,chews,to eat,to be hungry,full,to eat
+they first girl is about to take a bite of her pizza and the second is picking.,friendliness,none,none,none,hungry,chews,to eat,to be hungry,full,eating

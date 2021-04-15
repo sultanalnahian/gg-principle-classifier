@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two boys at a birthday party.,assistiveness,none,none,none,young,none,none,none,happy,to have fun
+they are standing in front of a round blue table.,assistiveness,none,none,none,curious,gets yelled at,none,none,happy,to sit down
+the table has presents on it and a plate of cake.,assistiveness,none,none,none,generous,gets dirty,to eat,to buy the cake,happy,to eat the cake
+the first boy standing in front of the plate is cutting it with a knife.,assistiveness,none,none,none,brave,gets cut,to eat,to be a boy,happy,to eat
+the second boy is smiling and holding out his plate.,assistiveness,none,happy,to eat,friendly,gets dirty,to eat,to be hungry,happy,to eat
+there are presents on the table.,assistiveness,none,none,none,generous,none,none,to have a party,happy,to show off
+there balloons in the background.,assistiveness,none,none,none,playful,none,none,none,happy,to have fun
+there are napkins and forks on the table.,assistiveness,none,none,none,careless,none,none,none,happy,to clean up

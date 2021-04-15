@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two boys in a lunch line.,assistiveness,none,none,none,hungry,gets hungry,none,to go to the lunch line,hungry,to eat
+they have trays of food in front of them.,assistiveness,none,none,none,hungry,gets dirty,to eat,to go to the kitchen,full,to eat
+the first boy is standing in front of the second.,assistiveness,none,none,to get past personx,young,gets yelled at,to be first,none,nervous,to talk to the boy
+he is looking at a bottle of milk and frowning.,assistiveness,none,none,none,annoyed,none,none,none,annoyed,to drink the milk
+the second boy is leaning against the railing.,assistiveness,none,none,none,curious,gets hurt,to be alone,none,happy,to get up
+he is looking at the first boy.,assistiveness,none,none,to go to the party,curious,gets a kiss,to be noticed,none,happy,to talk to the boy
+his eyebrow is raised and he is frowning.,assistiveness,none,none,none,curious,none,none,none,annoyed,to look away
+the first boy has his hand on the hip.,assistiveness,none,none,to kiss personx,playful,gets slapped,to be sexual,none,excited,to dance
+there are standing in front of a line of milk.,assistiveness,none,none,none,patient,gets thirsty,to get something,to walk to the counter,happy,to buy milk
+there are people behind the boys.,assistiveness,none,none,none,sneaky,none,to be in charge,none,happy,to be in charge

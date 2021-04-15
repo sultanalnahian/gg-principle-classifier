@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is waving at the girl.,assistiveness,none,happy,to say hello,friendly,gets a kiss,to be friendly,none,happy,to say hello
+the girl is leaning against a snack machine.,assistiveness,none,none,none,bored,gets hungry,to eat,to go to the snack machine,happy,to eat
+the girl is.,assistiveness,none,none,to go out,brave,none,none,none,happy,to kiss her
+waving at the.,assistiveness,none,none,none,curious,none,to be noticed,none,happy,to get a drink
+boy.,assistiveness,none,none,none,determined,none,to be a good friend,none,happy,to get a drink
+the kids are in a hallway.,assistiveness,none,none,to go to the room,curious,none,none,to walk to the hallway,happy,to walk to the hallway
+the girl has snacks in her hand.,assistiveness,none,none,none,hungry,gets hungry,to eat,to have snacks,happy,to eat
+the boy has his hands in his pockets.,assistiveness,none,none,none,sneaky,none,to hide something,none,nervous,to hide

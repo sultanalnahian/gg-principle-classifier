@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the classroom.,attentiveness,none,none,none,curious,gets scolded,none,to go to the classroom,interested,to learn
+there are books on the boy s desk.,attentiveness,none,none,none,studious,none,none,none,happy,to read
+the boy is sitting at the desk.,attentiveness,none,none,none,studious,none,to work,none,bored,to get up
+the boy is slouching in the chair.,attentiveness,none,none,none,lazy,gets scolded,to be mean,none,bored,to get up
+the boy has his hand on his face.,attentiveness,none,none,none,scared,gets slapped,to be noticed,none,embarrassed,to run away
+the boy is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the boy is in school.,attentiveness,none,none,none,young,none,none,none,happy,to go to school

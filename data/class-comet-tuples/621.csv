@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is walking across the street in the crosswalk.,caution,none,none,none,active,gets hit by a car,to get to the other side,to get up,happy,to get to their destination
+the traffic light says walk.,caution,none,none,none,careless,none,to be safe,none,safe,to get to their destination
+there is a green car next to the boys.,caution,none,none,none,friendly,none,none,none,happy,to get to know them
+the boy in the red and creme jacket is in the front.,caution,none,none,none,mean,gets dirty,none,to be in the front,happy,to get a drink
+the boy in the red and creme jacket is smiling.,caution,none,none,none,happy,none,none,none,happy,to be a good friend
+the boy in the red and creme jacket is holding his bookbag.,caution,none,none,none,careful,none,to be helpful,to be a thief,happy,to go to the library
+the boy in the blue jacket is pointing backward.,caution,none,none,none,curious,gets yelled at,to be helpful,none,curious,to run away
+the boy in the blue jacket is looking at the other boy.,caution,none,none,none,curious,none,to be observant,none,happy,to talk to the boy
+the boy in the blue jacket looks serious.,caution,none,none,none,serious,none,none,none,happy,to be a good friend

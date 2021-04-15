@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the dog is jumping on the boy.,friendliness,gets hurt,scared,to run away,playful,gets bit,to play,none,happy,to run away
+the boy is in his bedroom.,friendliness,none,none,none,curious,none,to be alone,to walk to the bedroom,happy,to play
+the boy is on his knees.,friendliness,none,none,none,caring,none,to be respectful,none,happy,to propose
+the boy has grey shoes in his hands.,friendliness,none,none,none,careless,gets dirty,none,none,sad,to get rid of them
+one of his shoes is falling apart.,friendliness,none,none,none,clumsy,gets scolded,none,none,sad,to get a new pair
+it has tears and holes in it.,friendliness,none,none,none,emotional,none,none,none,sad,to cry
+the boy is frowning down at the dog.,friendliness,none,none,none,annoyed,none,none,none,annoyed,to pet the dog
+the shadow of the light is in the room.,friendliness,none,none,none,dark,none,none,none,sad,to be alone

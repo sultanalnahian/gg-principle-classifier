@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy in red is smiling at his friend.,cleanliness,none,happy,to smile back,friendly,none,to be happy,none,happy,to say hello
+the boy that is frowning is standing up.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to walk away
+the boy in red is going through books.,cleanliness,none,none,none,curious,none,none,none,happy,to read
+the boy that is frowning is holding a book.,cleanliness,none,none,none,pensive,none,none,none,annoyed,to read
+the are in the hallway.,cleanliness,none,none,none,curious,none,none,none,curious,to go to the bathroom
+the locker is open.,cleanliness,none,none,none,curious,none,none,to open the locker,relieved,to get out of the locker
+the boy in the red is on his knees.,cleanliness,none,none,none,humble,none,to be humble,none,sad,to get up

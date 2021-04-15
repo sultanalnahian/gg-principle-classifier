@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are standing in the hallway.,assistiveness,none,none,none,patient,none,none,none,nervous,to walk away
+the boy has a phone in his hand.,assistiveness,none,none,none,curious,none,to communicate,none,happy,to call the police
+the boy is handing the phone to his mother.,assistiveness,none,happy,to say hello,helpful,none,to be nice,to pick up the phone,happy,to talk to the mother
+the boy is grinning at his mom.,assistiveness,none,happy,to smile,happy,none,none,none,happy,to smile
+the mother is grinning back at her son.,assistiveness,none,happy,to smile,playful,none,to show love,none,happy,to say something funny
+the mother is reaching for the phone.,assistiveness,none,none,none,curious,none,to call someone,to pick up the phone,happy,to call someone

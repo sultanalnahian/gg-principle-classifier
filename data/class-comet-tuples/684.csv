@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is in the car.,caution,none,none,none,excited,none,to go somewhere,to get in the car,happy,to go to the store
+the mom is driving.,caution,none,none,none,responsible,gets tired,to be helpful,to get in the car,happy,to go to the store
+the dad is sitting on the passenger side.,caution,none,none,none,friendly,gets yelled at,to be in the car,to get in the car,happy,to get out of the car
+the dad is holding a map.,caution,none,none,none,careful,none,to be careful,to have a map,smart,to find the right place
+the son is sitting in the backseat.,caution,none,none,none,bored,gets yelled at,to be alone,to be in the car,happy,to get out of the car
+the son is lying across the backseat of the car.,caution,none,none,none,careless,gets yelled at,to be alone,to be in the car,nervous,to get out of the car
+the son is playing a video game.,caution,none,none,none,playful,gets exercise,to have fun,to have a video game,happy,to have fun
+the son is grinning.,caution,none,none,to smile,happy,none,none,none,happy,to be a good father

@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are walking in the snow.,friendliness,none,none,none,playful,gets cold,to have fun,to put on their coat,happy,to go inside
+the kids have on jackets.,friendliness,none,none,none,cold,none,to be warm,none,warm,to wear the jacket
+the kids are smiling.,friendliness,none,none,none,happy,none,none,none,happy,to have fun
+the boy in front is pointing his hand.,friendliness,none,none,none,helpful,gets yelled at,to be helpful,none,happy,to get the boy 's attention

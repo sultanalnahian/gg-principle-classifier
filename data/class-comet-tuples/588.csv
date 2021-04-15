@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is having dinner.,politeness,none,none,none,hungry,gets full,to eat,to cook,full,to eat
+the table has plates of food on it.,politeness,none,none,none,hungry,gets dirty,to eat,to have food,full,to eat
+the chicken is on the plate in front of the boy.,politeness,none,none,to eat the chicken,hungry,gets dirty,to eat,to be hungry,hungry,to eat the chicken
+there.,politeness,none,none,none,determined,none,to be a good friend,none,happy,to get a drink
+is milk on the table.,politeness,none,none,none,hungry,none,to eat,to buy milk,satisfied,to drink
+the boy is chewing.,politeness,none,none,none,curious,chews,to eat,none,satisfied,to eat
+the mother is sitting beside him.,politeness,none,loved,to talk,caring,gets a hug,to be close to the son,to be near the father,happy,to talk
+she is wiping her hand with a napkin.,politeness,none,none,none,clean,gets dirty,to clean up,to have a napkin,clean,to dry off
+she is smiling.,politeness,none,none,none,happy,none,none,none,happy,to smile

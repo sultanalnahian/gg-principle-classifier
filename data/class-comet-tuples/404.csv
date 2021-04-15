@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two boys.,cooperation,none,none,none,young,none,none,none,happy,to grow up
+"the first boy is holding a plate , the plate has food on it.",cooperation,none,none,none,hungry,gets dirty,to eat,to be hungry,full,to eat
+"the second boy is looking down at the plate , he is taking food off the plate.",cooperation,none,none,none,hungry,gets dirty,to eat,to be hungry,full,to eat
+there are cookies on the plate.,cooperation,none,none,none,hungry,none,none,to bake cookies,full,to eat cookies
+there are different variations on the plate.,cooperation,none,none,none,different,none,none,none,different,to be different

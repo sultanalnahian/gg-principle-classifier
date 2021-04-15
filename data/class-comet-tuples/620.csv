@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is standing outside the baby s room.,politeness,none,none,none,curious,none,to be a good listener,to be in the room,happy,to go to the room
+the baby is sleeping in the crib.,politeness,none,none,none,tired,gets yelled at,to sleep,to be in the crib,happy,to wake up
+the boys are playing a handheld game.,politeness,none,none,none,playful,gets exercise,to have fun,to have a game,happy,to have fun
+the boy in the red is peeping into the room.,politeness,none,none,none,curious,gets scolded,to be sneaky,none,sneaky,to get out of the room
+the boy in the green is looking at the handheld game.,politeness,none,none,none,curious,none,to be entertained,none,happy,to play the game

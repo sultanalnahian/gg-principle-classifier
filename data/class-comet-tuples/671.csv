@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+they are at a party.,friendliness,none,none,none,social,gets drunk,to have fun,to get dressed,happy,to have fun
+some kids are watching the clown make balloons.,friendliness,none,none,none,fun,none,to have fun,to buy balloons,happy,to have fun
+the boy is playing with the animal balloon.,friendliness,none,none,none,playful,gets dirty,to have fun,to buy a balloon,happy,to play with the animal
+the other boy is watching.,friendliness,none,none,none,curious,none,to be entertained,none,happy,to be entertained
+the boy in the red is looking at the girl.,friendliness,none,none,to smile,curious,gets a kiss,to be noticed,none,interested,to ask her out
+the boy in the red is grinning.,friendliness,none,none,none,happy,none,none,none,happy,to laugh
+the girl is looking at the boy.,friendliness,none,none,to smile,curious,gets a kiss,to be noticed,none,happy,to flirt
+the girl is holding her hand across her chest.,friendliness,none,none,to be left alone,mean,gets slapped,to show affection,to be holding a baby,nervous,to kiss the girl

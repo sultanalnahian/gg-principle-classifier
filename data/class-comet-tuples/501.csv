@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the green fish is looking at the blue fish.,attentiveness,none,none,none,curious,none,none,none,happy,to catch a fish
+the blue fish is looking at the green fish.,attentiveness,none,none,none,curious,none,none,none,happy,to catch a fish
+the two fish are in the water.,attentiveness,none,none,none,playful,gets wet,none,to go to the water,happy,to catch fish
+the blue fish has a long nose.,attentiveness,none,none,none,curious,none,none,none,happy,to clean the fish

@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is in the car.,caution,none,none,none,excited,none,to go somewhere,to get in the car,happy,to go to the store
+all of them have their seat belts on.,caution,none,none,none,prepared,none,to be safe,to be in a car,safe,to be safe
+it is dark outside.,caution,none,none,none,dark,gets tired,none,none,tired,to go outside
+the father is driving the car.,caution,none,none,none,responsible,gets tired,to get somewhere,to get into the car,happy,to get out of the car
+the mother is asleep in the passenger seat.,caution,none,none,none,tired,none,none,to be in the car,tired,to sleep
+the son is asleep in the backseat.,caution,none,none,none,tired,none,none,to be in the car,happy,to wake up

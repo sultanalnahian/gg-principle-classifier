@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the cat is smiling.,sensibleness,none,none,none,happy,none,none,none,happy,to be happy
+the boy is feeding the cat.,sensibleness,none,none,none,caring,gets bitten,to feed the cat,to get the cat food,happy,to feed the cat
+the boy is smiling.,sensibleness,none,none,none,friendly,none,none,none,happy,to smile
+the food bowl on the floor is purple.,sensibleness,none,none,none,unhealthy,none,none,none,embarrassed,to eat
+the boy is using a spoon to scoop out the cat food into the bowl.,sensibleness,none,none,none,hungry,gets dirty,to eat,to get the bowl,satisfied,to eat
+the boy is on his knees.,sensibleness,none,none,none,caring,none,to be respectful,none,happy,to propose

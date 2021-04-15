@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+they are standing near the door.,friendliness,none,none,none,curious,gets exercise,to leave,to walk to the door,good,to leave
+the boy in the red is holding the door.,friendliness,none,none,none,helpful,gets yelled at,to be polite,to walk up to the door,helpful,to let the boy in
+the boy is grinning at the other person.,friendliness,none,none,to smile,friendly,none,none,none,happy,to smile
+the other person is standing by the door.,friendliness,none,none,none,polite,none,to be polite,to walk to the door,good,to say hello
+the other person is holding a bottle.,friendliness,none,none,none,careful,none,to drink,to grab the bottle,happy,to drink
+the dad is standing behind the boy.,friendliness,none,none,to be safe,helpful,none,to be helpful,to be near the boy,happy,to be a good dad
+the dad is holding a duffle bag.,friendliness,none,none,none,careless,none,to hide something,to pick up the bag,tired,to go to the bank
+the dad is grinning at the other person.,friendliness,none,none,to smile,friendly,none,none,none,happy,to tell them something funny

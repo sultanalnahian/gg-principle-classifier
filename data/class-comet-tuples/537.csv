@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boys are in the restroom.,cleanliness,none,none,none,relieved,none,to be alone,to go to the bathroom,relieved,to wash their hands
+there s a towel on the wall.,cleanliness,none,none,none,dry,none,none,none,dry,to dry off
+there is soap on the wall.,cleanliness,none,none,none,clean,none,none,none,clean,to clean up
+the boy in red is washing his hands.,cleanliness,none,none,none,clean,gets dirty,to be clean,to get the water,clean,to dry off
+the boy in the blue is walking up to the sink.,cleanliness,none,none,none,curious,gets dirty,to clean up,to walk to the sink,satisfied,to wash the dishes

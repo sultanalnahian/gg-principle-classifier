@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are a lot of people in a dining room.,assistiveness,none,none,none,social,none,to eat,none,happy,to eat
+there are children carrying chairs.,assistiveness,none,none,none,active,gets tired,to be helpful,to be a toddler,tired,to sit down
+"there is a woman helping another , older woman up from her chair.",assistiveness,none,grateful,to thank personx,helpful,gets thanked,to help someone,to be a doctor,helpful,to help someone else
+the boy is holding a book and walking away from the table.,assistiveness,none,none,none,bored,gets lost,to be alone,to be in a room,happy,to go home
+there man in the purple sweater is carrying chairs.,assistiveness,none,none,none,helpful,gets tired,to be helpful,to walk to the table,happy,to sit down
+he is smiling down at the younger boy beside him.,assistiveness,none,happy,to smile back,friendly,none,to be friendly,none,happy,to smile
+the younger boy is also carrying a chair.,assistiveness,none,none,none,helpful,gets tired,to sit down,to pick up the chair,tired,to sit down
+the girl in pink is holding open a green garbage bag.,assistiveness,none,none,none,helpful,gets dirty,to be helpful,to walk to the garbage bag,happy,to get out of the bag

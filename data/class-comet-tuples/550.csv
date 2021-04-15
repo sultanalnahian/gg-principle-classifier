@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is sitting at the table having dinner.,attentiveness,none,none,none,hungry,eats,to eat,to have dinner,happy,to eat
+the mother is sitting down frowning.,attentiveness,none,none,none,annoyed,none,none,none,upset,to cry
+the father is sitting down and frowning.,attentiveness,none,none,none,annoyed,none,none,none,upset,to get up
+the boy is holding a red plate.,attentiveness,none,none,none,caring,gets dirty,to eat,to be hungry,happy,to eat
+the boy is pulling out his chair.,attentiveness,none,none,none,helpful,gets yelled at,to sit down,to be in a meeting,satisfied,to sit down
+the boy is smiling.,attentiveness,none,none,none,friendly,none,none,none,happy,to smile
+the father is looking down at his plate.,attentiveness,none,none,none,curious,eats,to eat,none,full,to eat
+the mother is looking at the boy.,attentiveness,none,none,none,curious,none,to see the boy,none,happy,to talk to the boy

@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is having dinner.,sensibleness,none,none,none,caring,gets full,to eat,to buy food,happy,to clean up
+the family is sitting at the table.,sensibleness,none,none,none,hungry,eats,to eat,to be at the table,happy,to eat
+there are plates of food on the table.,sensibleness,none,none,none,hungry,gets full,none,to cook,full,to eat
+the son is passing green food to the dad.,sensibleness,none,grateful,to eat the food,generous,gets dirty,to be generous,to buy the food,happy,to eat the food
+the boy has a piece of asparagus in his hand and is eating it.,sensibleness,none,none,none,hungry,gets sick,to eat,to buy the food,satisfied,to eat it
+the father is looking at the son and frowning.,sensibleness,none,none,none,curious,none,none,none,happy,to smile
+the girl is looking at the boy and frowning.,sensibleness,none,none,to smile,curious,gets nervous,none,none,confused,to smile
+outside the window it is snowing.,sensibleness,none,none,none,cold,none,none,none,cold,to go outside

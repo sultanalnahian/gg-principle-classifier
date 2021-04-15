@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are three boys , the first one is reaching out for something.",cooperation,none,none,none,eager,gets yelled at,to be a good son,none,happy,to get it
+"the second boy is looking at the first boy , he is holding something out to the.",cooperation,none,none,none,curious,gets yelled at,to be helpful,to be holding something,happy,to give it to the boy
+the third boy is reaching for the thing in the second boys hand.,cooperation,none,none,to play with personx,greedy,gets yelled at,to be the first boy,to be playing,happy,to play with the item
+there are in the park.,cooperation,none,none,none,active,gets exercise,to have fun,to go to the park,happy,to go home
+there is someone behind the boys.,cooperation,none,none,none,sneaky,none,none,none,happy,to be noticed
+there are trees everywhere.,cooperation,none,none,none,careless,none,none,none,happy,to plant a tree

@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the couple in front of the kids are smiling.,friendliness,none,happy,to smile,friendly,none,to be nice,none,happy,to be a good parent
+they are at the movies.,friendliness,none,none,none,entertained,gets bored,to have fun,to buy tickets,happy,to go home
+the man is holding popcorn.,friendliness,none,none,none,hungry,gets dirty,to eat popcorn,to buy popcorn,satisfied,to eat
+the woman is holding a drink.,friendliness,none,none,none,thirsty,gets drunk,to drink,to grab the drink,happy,to drink the drink
+the boy in the red shirt is looking at his friend beside him.,friendliness,none,none,to talk to personx,curious,none,to be noticed,none,happy,to talk to the boy
+he is smiling.,friendliness,none,none,none,happy,none,none,none,happy,to smile
+the boy in the blue frowning and looking at the man in front of him.,friendliness,none,none,none,curious,none,to be in the blue,none,confused,to tell the man to stop staring
+the girl is also frowning and looking at the woman.,friendliness,none,none,none,suspicious,none,none,none,confused,to flirt

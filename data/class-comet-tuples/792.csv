@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there is a mother , a daughter and a son.",assistiveness,none,none,none,caring,none,none,to have a baby,happy,to raise a child
+the daughter is sitting at the table with a plate of food in front of her.,assistiveness,none,none,none,hungry,gets dirty,to eat,to be at the table,full,to eat
+the son is standing and is handing her a glass.,assistiveness,none,happy,to thank personx,helpful,none,to be helpful,to be near the son,happy,to give the glass back
+the mother is a short distance away holding her plate in her hand.,assistiveness,none,none,none,busy,gets dirty,to eat,to be near the mother,happy,to eat
+she is smiling.,assistiveness,none,none,none,happy,none,none,none,happy,to smile

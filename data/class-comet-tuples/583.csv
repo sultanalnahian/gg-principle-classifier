@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is smiling.,sensibleness,none,none,none,friendly,none,none,none,happy,to smile
+the boy is looking at the flag.,sensibleness,none,none,none,observant,smiles,to see the flag,none,happy,to see what it says
+the boy is standing up.,sensibleness,none,none,none,active,gets hurt,to get up,none,good,to go to the bathroom
+the boy has his hand on his chest.,sensibleness,none,none,none,playful,gets yelled at,to show off his chest,none,happy,to be noticed
+the has a blue ball cap in his hands and is holding it to his chest.,sensibleness,none,none,none,playful,gets hit,to hide their face,to have a ball,happy,to play a game

@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is on the steps.,attentiveness,none,none,none,active,none,none,none,happy,to get to the other side
+the dog is in the yard.,attentiveness,none,none,none,playful,gets bitten,none,to walk to the yard,happy,to play with the dog
+the man is holding coffee.,attentiveness,none,none,none,thirsty,none,to drink,to buy coffee,satisfied,to drink
+there s a baseball glove on the porch.,attentiveness,none,none,none,athletic,gets exercise,to play baseball,to go outside,happy,to play baseball
+the baseball glove has tears and holes in it.,attentiveness,none,none,none,careless,gets hurt,none,none,sad,to get a new glove
+the boy is frowning and gesturing towards the dog.,attentiveness,none,none,none,annoyed,none,to show disapproval,none,annoyed,to get the dog to stop

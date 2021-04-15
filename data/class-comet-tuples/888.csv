@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is holding a plate of food.,friendliness,none,none,none,hungry,gets dirty,to eat,to be hungry,full,to eat
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile
+there s snow falling outside the window.,friendliness,none,none,none,cold,gets cold,none,none,cold,to get a blanket
+there is a cooked turkey on the table.,friendliness,none,none,none,hungry,eats,to eat,to prepare the food,happy,to eat

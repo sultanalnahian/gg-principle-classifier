@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+they re in a building.,assistiveness,none,none,none,brave,gets dirty,to be in a better place,to walk to the building,happy,to get out of the building
+the boy is holding the door.,assistiveness,none,none,none,helpful,gets yelled at,to be polite,to be a good listener,helpful,to let the boy in
+the boy is smiling.,assistiveness,none,none,none,friendly,none,none,none,happy,to smile
+the boy is holding a cup.,assistiveness,none,none,none,careful,none,to drink,to grab the cup,happy,to drink
+the dad is walking in the building with his daughter.,assistiveness,none,happy,to go to the park,caring,gets sweaty,to be with his daughter,to get ready,happy,to go to the bathroom
+the daughter is smiling.,assistiveness,none,happy,to smile,happy,none,none,none,happy,to be happy
+the dad is smiling.,assistiveness,none,none,none,happy,none,none,none,happy,to be happy
+the dad is holding the daughter s hand.,assistiveness,none,happy,to be held,caring,none,to be affectionate,to be a father,happy,to kiss the daughter

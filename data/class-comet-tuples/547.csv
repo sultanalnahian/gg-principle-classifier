@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the kitchen.,cleanliness,none,none,none,hungry,none,to eat,to walk to the kitchen,hungry,to eat
+the boy is holding a plate with red food on it.,cleanliness,none,none,none,hungry,gets dirty,to eat,to be hungry,full,to eat
+the trash can is.,cleanliness,none,none,none,careless,none,to clean up,none,relieved,to clean up
+white.,cleanliness,none,none,none,determined,none,to be a good friend,none,happy,to get a drink
+the boy is having.,cleanliness,none,none,none,curious,none,none,none,happy,to get a drink
+the is red stuff on the trashcan.,cleanliness,none,none,none,dirty,none,none,none,disgusted,to clean up the trash
+the boy is walking away from the trash can.,cleanliness,none,none,none,brave,gets dirty,to be alone,to be in the trash can,relieved,to go home
+he is walking past the fridge.,cleanliness,none,none,none,hungry,gets thirsty,to get something to eat,to be hungry,hungry,to get a drink

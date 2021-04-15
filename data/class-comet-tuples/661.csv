@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids were outside playing in the snow.,cleanliness,none,none,none,playful,gets cold,to have fun,to go outside,happy,to have fun
+the boy has on a jacket and boots and a scarf.,cleanliness,none,none,none,cold,gets cold,to be warm,to go outside,warm,to go outside
+the boy in the brown jacket has snow and mud on his boots.,cleanliness,none,none,none,dirty,gets dirty,none,none,dirty,to clean up the boots
+the boy in the brown jacket tracked snow and mud in the house.,cleanliness,none,none,none,playful,gets dirty,none,to go outside,happy,to get out of the snow
+the boy in the brown jacket is grinning looking back at the boy.,cleanliness,none,none,to smile,curious,none,to be noticed,none,happy,to say hello
+the boy in the brown jacket is pointing forward.,cleanliness,none,none,none,curious,none,to be helpful,none,happy,to get to the bottom
+the boy in the blue jacket is standing on the stairs.,cleanliness,none,none,none,curious,none,none,none,happy,to get up
+the boy in the blue jacket is frowning.,cleanliness,none,none,none,mean,none,none,none,annoyed,to get away from the boy
+the boy in the blue jacket is looking at the other boy.,cleanliness,none,none,none,curious,none,to be observant,none,happy,to talk to the boy

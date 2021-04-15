@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are in the hallway.,attentiveness,none,none,none,caring,none,none,to walk to the hallway,happy,to talk to the kids
+the boy in the red jacket is frowning.,attentiveness,none,none,none,mean,none,none,none,annoyed,to get away from the boy
+the boy in the red is holding a book.,attentiveness,none,none,none,studious,none,to read,to be holding a book,happy,to read
+the boy in the red has on a backpack.,attentiveness,none,none,none,prepared,none,to be prepared,to put the backpack on,happy,to run away
+the boy in the red is looking at the other boy.,attentiveness,none,none,none,curious,none,to be observant,none,curious,to talk to the boy
+the boy in the red has one hand in his pocket.,attentiveness,none,none,none,sneaky,none,to hide something,none,happy,to hide
+the boy in the blue is looking at the other boy.,attentiveness,none,none,none,curious,none,to be observant,none,curious,to talk to the boy
+the boy in the blue is frowning.,attentiveness,none,none,none,annoyed,none,none,none,sad,to get away from the boy
+the boy in the blue has on a backpack.,attentiveness,none,none,none,prepared,none,to be prepared,to go to the store,happy,to go to school
+the boy in the blue has both hands in his pockets.,attentiveness,none,none,none,sneaky,none,to hide something,none,happy,to hide

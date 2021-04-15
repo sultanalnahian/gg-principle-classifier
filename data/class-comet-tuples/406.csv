@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two walls at the bottom of the right wall a hole is placed.,??,none,none,none,dumb,none,none,none,happy,to be in the right wall
+"a arm is reaching through the hole , it is holding a paintbrush.",??,none,none,none,helpful,gets dirty,to paint,none,accomplished,to clean up the hole
+the arm is painting the floor.,??,none,none,none,helpful,gets dirty,to paint,to get a brush,satisfied,to clean up
+there arm is painting the floor blue.,??,none,none,none,creative,gets dirty,none,to get paint brushes,happy,to clean up
+there is a lamp hanging above the floor.,??,none,none,none,lazy,none,none,none,happy,to get a new lamp
+the lamp is blue.,??,none,none,none,dead,none,none,none,hurt,to get a new lamp
+there is a window above the hole.,??,none,none,none,lazy,none,none,none,happy,to get out
+there is a window on the other wall.,??,none,none,none,curious,none,none,none,happy,to look out

@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are at school.,assistiveness,none,none,none,responsible,none,none,to be at school,happy,to play
+the kids are in the hallway.,assistiveness,none,none,none,caring,none,none,to walk to the hallway,happy,to talk to the kids
+the boy is smiling.,assistiveness,none,none,none,friendly,none,none,none,happy,to smile
+the girl is trying to hold a lot of tennis rackets.,assistiveness,none,none,none,competitive,gets sweaty,to win,to buy tennis balls,competitive,to win the game
+the girl is frowning.,assistiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the girl
+the of the balls and.,assistiveness,none,none,none,athletic,none,to be competitive,none,happy,to win
+rackets have escaped her grip.,assistiveness,none,none,none,scared,none,none,none,relieved,to get away
+the boy is looking at the girl.,assistiveness,none,none,to smile,curious,gets a kiss,to be noticed,none,happy,to ask her out
+he is walking by.,assistiveness,none,none,none,active,none,to get exercise,none,happy,to go home

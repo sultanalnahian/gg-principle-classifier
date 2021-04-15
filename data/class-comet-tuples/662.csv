@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is sitting at the table eating dinner.,politeness,none,none,none,hungry,gets full,to eat,to have dinner,full,to eat
+"there is a salad , bread , butter , a plate of spaghetti on the plate.",politeness,none,none,none,hungry,none,to eat,to buy the food,full,to eat
+the boy is looking at the mother.,politeness,none,none,none,curious,none,to see his mother,none,happy,to talk to the mother
+the boy is grinning.,politeness,none,none,none,happy,none,none,none,happy,to smile
+the boy is scooping spaghetti on his utensil.,politeness,none,none,none,hungry,gets dirty,to eat,to have a spoon,full,to eat
+the mother is looking at the boy.,politeness,none,none,none,curious,none,to see the boy,none,happy,to talk to the boy
+the mother has bread in her hand.,politeness,none,none,none,hungry,gets dirty,to eat,to buy bread,hungry,to eat the bread
+the mother is grinning.,politeness,none,none,none,happy,none,none,none,happy,to be happy

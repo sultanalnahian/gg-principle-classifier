@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a man sitting in a sofa.,cleanliness,none,none,none,relaxed,none,to sit down,none,relaxed,to get up
+he is reading a newspaper.,cleanliness,none,none,none,curious,learns something,to learn something,to open the newspaper,informed,to learn something
+behind him is a table with a fish bowl on top of it.,cleanliness,none,none,none,full,none,none,none,full,to eat
+there is a goldfish inside of it.,cleanliness,none,none,none,dumb,none,none,none,happy,to be a good pet
+the fish looks sad.,cleanliness,none,none,none,sad,cries,none,none,sad,to cry
+the man and his sofa are dripping with water.,cleanliness,none,none,none,careless,none,none,none,wet,to clean up the mess
+he is looking back at the fish.,cleanliness,none,none,none,curious,catches a fish,to catch a fish,none,happy,to catch a fish

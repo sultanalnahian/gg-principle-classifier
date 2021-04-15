@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the students are looking at the girl in purple.,assistiveness,none,none,to smile,curious,gets a kiss,to see her beauty,none,interested,to ask her out
+the girl dropped her lunch on the ground.,assistiveness,none,none,none,careless,gets dirty,none,to be hungry,sad,to pick up the lunch
+the girl is wearing purple.,assistiveness,none,none,none,beautiful,gets compliments,to be pretty,none,happy,to go out
+the is picking up her lunch off the floor.,assistiveness,none,none,none,hungry,gets dirty,to eat,to be hungry,satisfied,to eat
+the boy in yellow is smiling.,assistiveness,none,none,none,happy,none,none,none,happy,to smile
+the boy in blue is frowning.,assistiveness,none,none,none,annoyed,none,none,none,sad,to get away from the boy
+they are in the cafeteria.,assistiveness,none,none,none,hungry,eats,to eat,to go to the cafeteria,hungry,to eat

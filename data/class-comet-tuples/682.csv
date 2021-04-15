@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the boy is looking at a flyer.,attentiveness,none,none,none,curious,none,to know what the flyer is about,none,interested,to read the flyer
+the boy is holding the flyer.,attentiveness,none,none,none,curious,none,to be informed,none,interested,to read the flyer
+the flyer says bike rodeo the mother is looking at the boy the mother is.,attentiveness,none,none,none,curious,none,to see the boy,none,happy,to get the boy 's attention
+the mother is holding a calendar.,attentiveness,none,none,none,responsible,none,to be prepared,none,responsible,to make a calendar

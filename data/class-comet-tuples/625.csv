@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is sitting at the table.,humility,none,none,none,hungry,gets hungry,to eat,to walk to the table,happy,to eat
+there is food on the table.,humility,none,none,none,hungry,none,none,to cook,full,to eat
+the boy is scooping some vegetables on his spoon.,humility,none,none,none,hungry,gets dirty,to eat,to have a spoon,satisfied,to eat
+the father is holding a plate next to the boy.,humility,none,happy,to eat,caring,gets dirty,to be nice,to be near the boy,happy,to eat
+the boy is frowning at the plate his father is holding.,humility,none,none,to eat the food,angry,gets yelled at,none,none,upset,to eat the food

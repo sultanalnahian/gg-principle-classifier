@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is sitting at the table.,friendliness,none,none,none,hungry,gets hungry,to eat,to walk to the table,happy,to eat
+they are having breakfast.,friendliness,none,none,none,hungry,gets full,to eat,to prepare food,full,to eat
+the boy is blonde.,friendliness,none,none,none,pretty,none,none,none,happy,to go to school
+they are inside the kitchen.,friendliness,none,none,none,hungry,none,to cook,to walk to the kitchen,hungry,to eat
+the boy is looking at his father.,friendliness,none,none,to talk to personx,curious,none,to see his father,none,happy,to talk to father
+he is saying something.,friendliness,none,none,none,talkative,none,to be heard,none,heard,to be heard
+he is holding a glass of juice.,friendliness,none,none,none,thirsty,spills juice on floor,to drink juice,to pour juice,satisfied,to drink juice
+the father is opening the fridge.,friendliness,none,none,none,curious,gets hungry,to get something to eat,to walk to the fridge,hungry,to get a drink

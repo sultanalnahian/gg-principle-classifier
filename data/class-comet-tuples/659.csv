@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is looking at a paper.,attentiveness,none,none,none,curious,none,to learn,none,interested,to read the paper
+the paper is a list.,attentiveness,none,none,none,organized,none,none,none,satisfied,to write a note
+the list is for an overnight field trip.,attentiveness,none,none,none,prepared,none,to be prepared,to make a list,excited,to go to the field trip
+the boy is crossing out things on the list.,attentiveness,none,none,none,careless,none,to be a bad person,none,guilty,to get a new job
+the items are sitting in front of the boy.,attentiveness,none,none,to thank personx,helpful,none,to be in front of the boy,to pick up the items,happy,to talk to the boy

@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two boys on the sidewalk.,friendliness,none,none,none,young,none,none,none,happy,to go to the store
+the boys are smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to be happy
+there s a blue balloon floating next to them.,friendliness,none,none,none,playful,none,none,none,happy,to have fun
+the park bench behind them has blue balloons tied to it.,friendliness,none,none,none,playful,none,to have fun,none,happy,to have fun
+the boy in red is guiding his friend.,friendliness,none,grateful,to thank personx,helpful,none,to be helpful,to be a teacher,happy,to be a good friend

@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are six baskets of fruits.,cleanliness,none,none,none,talented,none,none,none,happy,to eat
+"the first basket has a pear , a plum , a peach , a orange , and.",cleanliness,none,none,none,lucky,none,none,none,happy,to eat
+"the second basket has a banana , a peach , a pear , a pear and a.",cleanliness,none,none,none,hungry,none,none,to buy apples,satisfied,to eat
+"the third basket has a banana , a plum , a pear , a orange , and.",cleanliness,none,none,none,hungry,none,none,none,satisfied,to eat
+"the fourth basket has a banana , a orange , a plum , a orange , and.",cleanliness,none,none,none,hungry,none,none,none,satisfied,to eat
+"the fifth basket has a pear , a banana , a plum , a peach , and.",cleanliness,none,none,none,hungry,none,none,none,satisfied,to eat
+"the sixth basket has a banana , a pear , a plum , a orange , and.",cleanliness,none,none,none,hungry,none,none,none,satisfied,to eat

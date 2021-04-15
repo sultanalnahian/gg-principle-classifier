@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there is snow on the ground , the trees are bare.",sensibleness,none,none,none,cold,none,none,none,cold,to get out of the snow
+"a gopher dressed in a sweater , pants , shoes , and socks is running towards a.",sensibleness,none,none,none,hurried,running,to be warm,to put on socks,happy,to run
+he is holding a newspaper and a purple cushion.,sensibleness,none,none,none,careful,none,to be polite,to buy a purple cushion,satisfied,to read the paper
+his shoes are coming off as he s running.,sensibleness,none,none,none,tired,gets tired,none,to put them on,tired,to get dressed
+there gopher is looking back at something.,sensibleness,none,none,none,curious,none,to be curious,none,curious,to find out what it is
+the gopher is running from something.,sensibleness,none,none,none,scared,gets sweaty,to be safe,none,scared,to run away
+there are snow and trees everywhere.,sensibleness,none,none,none,playful,none,none,none,happy,to have fun

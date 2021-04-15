@@ -1,0 +1,4 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are two boys , there is a toy on the ground.",cleanliness,none,none,none,playful,none,none,none,happy,to play with the toy
+the first boy is reaching down to pick up the toy and the second is looking at.,cleanliness,none,none,none,curious,none,to play with the toy,none,happy,to play with the toy
+"they are in a park , there is a bench and a trash can behind them.",cleanliness,none,none,none,active,none,none,none,happy,to go to the park

@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+thee is a boy and a man.,assistiveness,none,none,none,young,none,none,none,happy,to grow up
+the man is standing in front of a oven.,assistiveness,none,none,none,hungry,gets burned,to cook,to walk to the oven,hungry,to cook
+there is a pot on the oven and he is putting something inside the pot.,assistiveness,none,none,none,hungry,smells the food,to cook,to cook,hungry,to eat
+the boy is standing by the doorway with an open book in his hands.,assistiveness,none,none,none,curious,none,to read,none,interested,to read
+the boy is saying something to the man.,assistiveness,none,none,to listen to personx,social,none,to communicate,none,happy,to get the man 's attention
+the man is looking at the boy.,assistiveness,none,none,none,curious,none,to see the boy,none,interested,to talk to the boy

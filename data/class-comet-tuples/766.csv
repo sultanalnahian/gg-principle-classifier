@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy and a girl.,caution,none,none,none,young,none,none,none,happy,to have a baby
+the boy has taken out a bowl out of the microwave and is wiping it out with.,caution,none,none,none,hungry,gets dirty,to eat,to have food,satisfied,to eat
+the girl is sitting across the table from him with a bowl in front of her.,caution,none,none,to eat,hungry,gets dirty,to eat,to walk over to the table,happy,to eat
+the boy is smiling.,caution,none,none,none,friendly,none,none,none,happy,to smile
+the girl is looking at the boy.,caution,none,none,to smile,curious,gets a kiss,to be noticed,none,happy,to flirt
+the girl is holding a utensil in her hand.,caution,none,none,none,careful,none,to be helpful,none,happy,to eat
+the microwave has food splats in it.,caution,none,none,none,hungry,none,none,to have food,hungry,to eat

@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is not looking at the dog.,friendliness,none,none,none,scared,none,to be alone,none,sad,to run away
+the dog is frowning.,friendliness,none,none,none,annoyed,none,none,none,annoyed,to get a dog
+the boy is holding up a bone.,friendliness,none,none,none,helpful,gets a bone,to be helpful,to be a dog owner,happy,to give the dog a bone
+the boy and the dog is are outside in the snow.,friendliness,none,none,none,playful,gets cold,to play,to go outside,happy,to play
+the is a fence between the boy and the dog.,friendliness,none,none,none,mean,gets licked,none,none,sad,to keep the fence in good condition
+the boy is holding the bone above the fence.,friendliness,none,none,none,strong,gets yelled at,to be helpful,to be a thief,happy,to keep the bone safe
+the dog is jumping up to the bone.,friendliness,none,none,none,energetic,gets hurt,to get it back,none,happy,to get a drink
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile

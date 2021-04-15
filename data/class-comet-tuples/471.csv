@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy and a dog.,cleanliness,none,none,none,playful,none,none,none,happy,to play with the dog
+they are standing in front of a towel rack.,cleanliness,none,none,none,dry,gets wet,to dry off,none,dry,to dry off
+there are three towels on the rack.,cleanliness,none,none,none,clean,none,none,none,wet,to dry off
+"the first towel is purple and it says his , the second towel is pink and.",cleanliness,none,none,none,wet,none,to be dry,none,none,to dry off
+"the boy and the dog are looking at the yellow towel , the boy is smiling and.",cleanliness,none,none,none,happy,none,none,none,happy,to play with dog

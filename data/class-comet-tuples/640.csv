@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are at a table.,law-abiding,none,none,to eat,social,eats,to eat,to be at a table,happy,to eat
+the kids are playing a board game.,law-abiding,none,happy,to have fun,playful,gets exercise,to have fun,to have a board game,happy,to have fun
+the boy in the red is in the middle of the other two kids.,law-abiding,none,none,to get away from personx,mean,gets yelled at,none,none,nervous,to teach them a lesson
+the boy in the red is pointing at the girl.,law-abiding,none,scared,to run away,curious,gets yelled at,to be noticed,to be near the girl,happy,to tell the girl to run away
+the boy in the red is looking at the girl.,law-abiding,none,none,to smile,curious,gets a kiss,to be noticed,none,interested,to ask her out
+the girl is looking at the boy.,law-abiding,none,none,to smile,curious,gets a kiss,to be noticed,none,happy,to flirt
+the girl is grinning at the boy.,law-abiding,none,happy,to smile,happy,none,none,none,happy,to say hello
+the girl has her hand on the table.,law-abiding,none,none,none,nervous,gets yelled at,to be noticed,none,nervous,to get up
+the boy in the green is grinning.,law-abiding,none,none,none,happy,none,none,none,happy,to tell a joke
+the boy in the green is resting his arms on the table.,law-abiding,none,none,none,tired,none,to rest,none,happy,to rest

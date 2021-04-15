@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the kitchen.,cleanliness,none,none,none,hungry,none,to eat,to walk to the kitchen,hungry,to eat
+the boy has his hand on the counter.,cleanliness,none,none,none,careful,gets yelled at,to be careful,none,happy,to get a drink
+there is a glass on the table.,cleanliness,none,none,none,thirsty,none,none,none,happy,to drink
+there are green mats on the table.,cleanliness,none,none,none,active,none,none,none,tired,to eat
+there is plate on the table.,cleanliness,none,none,none,hungry,none,none,to be hungry,full,to eat

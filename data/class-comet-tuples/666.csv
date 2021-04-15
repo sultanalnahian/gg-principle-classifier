@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boys are standing outside the boys locker room.,attentiveness,none,none,none,sneaky,none,to be in the locker room,to walk to the locker room,happy,to talk to the boys
+the boy in the red is looking at the other boy.,attentiveness,none,none,none,curious,none,to be observant,none,curious,to talk to the boy
+the boy in the red is frowning.,attentiveness,none,none,none,mean,none,none,none,angry,to get away from the boy
+the boy in the red is zipping up his duffle bag.,attentiveness,none,none,none,mean,none,to be mean,none,sad,to go to the bathroom
+the boy in the blue is looking back at the boy.,attentiveness,none,none,none,curious,none,to see the boy,none,happy,to talk to the boy
+the boy in the blue is frowning.,attentiveness,none,none,none,annoyed,none,none,none,sad,to get away from the boy
+the boy in the blue is standing by the door.,attentiveness,none,none,none,curious,gets yelled at,to be polite,to walk to the door,happy,to say hello
+the boy in the blue has a duffle bag in his hand.,attentiveness,none,none,none,dirty,none,to hide something,none,guilty,to hide

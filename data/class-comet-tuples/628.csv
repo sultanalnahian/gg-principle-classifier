@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are some kids in the classrooms.,sensibleness,none,none,none,smart,none,none,to go to school,happy,to teach
+there are two kids standing in the doorway.,sensibleness,none,none,none,young,none,none,none,happy,to go to sleep
+there is a fish tank.,sensibleness,none,none,none,capable,none,none,none,happy,to catch fish
+the boy is standing over the fish tank.,sensibleness,none,none,none,curious,gets wet,to catch fish,none,happy,to catch fish
+the boy is grinning at the fish.,sensibleness,none,none,none,amused,none,none,none,happy,to catch a fish
+the boy is feeding the fish.,sensibleness,none,none,none,caring,gets dirty,to eat,to buy fish,satisfied,to eat
+the fish are eating the food.,sensibleness,none,none,none,hungry,gets full,to eat,to cook the fish,full,to clean up
