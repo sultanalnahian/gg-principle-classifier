@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is a banquet.,humility,none,none,none,powerful,none,none,none,happy,to eat
+the boy is frowning.,humility,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the boy is looking at the chef.,humility,none,none,none,curious,gets dirty,to learn how to cook,none,hungry,to eat
+the chef is serving food.,humility,none,none,none,helpful,gets dirty,to serve food,to prepare food,satisfied,to eat
+the boy is holding his plate.,humility,none,none,none,caring,gets dirty,to eat,to be hungry,full,to eat
+the boy is frowning.,humility,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the cook behind the table is holding food in a big spoon.,humility,none,none,none,hungry,gets dirty,to eat,to have food,full,to eat
+there two pans of food on the table.,humility,none,none,none,hungry,gets hungry,to eat,to have food,hungry,to eat
+the boy has his hand over his plate.,humility,none,none,none,greedy,gets dirty,to eat,to be hungry,guilty,to eat

@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is hanging a wet towel.,assistiveness,none,none,none,wet,gets wet,to dry off,to get a towel,dry,to dry off
+the boy does nt have a shirt on.,assistiveness,none,none,none,dirty,gets dirty,none,none,embarrassed,to go to the store
+there are two chairs in the backyard.,assistiveness,none,none,none,active,none,none,to walk to the yard,happy,to sit down
+there is a pool in the backyard.,assistiveness,none,none,none,athletic,gets exercise,none,to go to the pool,happy,to swim
+the boy is wearing red and yellow shorts.,assistiveness,none,none,none,dirty,gets dirty,to be fashionable,to put on shorts,embarrassed,to go to the beach
+the sky is blue.,assistiveness,none,none,none,calm,none,none,none,happy,to go to the beach
+there are trees in the back.,assistiveness,none,none,none,strong,none,none,none,happy,to get a new job
+the boy is smiling.,assistiveness,none,none,none,friendly,none,none,none,happy,to smile

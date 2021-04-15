@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is looking back at the school bus.,caution,none,none,none,curious,none,to see the bus,to walk to the bus stop,bored,to go to school
+the boy has a backpack on.,caution,none,none,none,prepared,none,to be prepared,none,prepared,to go to school
+the boy is frowning.,caution,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the bus is moving.,caution,none,none,none,moving,none,to get somewhere,to get to the bus stop,indifferent,to get to their destination
+the boy had his hands on his hips.,caution,none,none,none,playful,none,to dance,none,happy,to dance
+the boy is frowning.,caution,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the boy is watching the bus leave.,caution,none,none,none,observant,none,to be entertained,to go to the bus stop,happy,to go home
+the bus is yellow.,caution,none,none,none,careless,none,none,none,annoyed,to get to work
+the boy is walking on the street.,caution,none,none,none,active,gets exercise,to get to the other side,to be walking,happy,to go to the store

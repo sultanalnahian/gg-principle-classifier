@@ -1,0 +1,15 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are in the park.,attentiveness,none,none,none,active,gets exercise,to have fun,to go to the park,happy,to go home
+there are trees in the background.,attentiveness,none,none,none,quiet,none,none,none,happy,to be heard
+there are people in the background.,attentiveness,none,none,none,present,none,none,none,happy,to be noticed
+a boy and girl are sitting on a bench.,attentiveness,none,none,none,playful,none,to play,to walk to the bench,happy,to play
+the boy is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the girl is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the girl
+the boy has his hands on the chin.,attentiveness,none,none,none,curious,gets yelled at,to be noticed,none,happy,to be noticed
+the boy is looking away from the girl.,attentiveness,none,none,to ask personx why they are looking,scared,none,to be alone,none,nervous,to avoid her
+the girl has her hands up.,attentiveness,none,none,none,careless,gets yelled at,to be a good friend,none,guilty,to get a job
+the girl is looking at the boy.,attentiveness,none,none,to smile,curious,gets a kiss,to be noticed,none,happy,to flirt
+the girl is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the girl
+the boy is frowning.,attentiveness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the friends are sitting on a bench.,attentiveness,none,none,none,relaxed,gets tired,to be alone,to walk to the bench,happy,to have fun
+the friends are at the park.,attentiveness,none,none,none,social,gets exercise,to have fun,to drive to the park,happy,to have fun

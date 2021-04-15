@@ -1,0 +1,4 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are three boys and two girls , they are sitting in the stands.",caution,none,none,none,young,none,none,none,happy,to play
+"it is very bright out , the first boy shields his eyes with his hand , the.",caution,none,none,none,bright,gets yelled at,to be safe,none,happy,to be safe
+"the boy sitting beside him is offering his binoculars to the first boy , he is saying.",caution,none,none,to thank personx,helpful,""" look",to be helpful,to be a teacher,happy,to be thanked

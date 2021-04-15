@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are two boys , they are walking.",friendliness,none,none,none,young,none,none,none,happy,to have fun
+"the first boy has books in his hands , he is smiling and waving to the second.",friendliness,none,none,none,excited,gets scolded,to be a good boy,none,happy,third
+"the second boy has papers in his hand and a book in the other , he is.",friendliness,none,none,none,smart,he is reading,to read,to be a teacher,smart,to read
+the boy has a bookbag on his back.,friendliness,none,none,none,prepared,none,to be prepared,none,happy,to read
+the other boy is nt carrying a bookbag.,friendliness,none,none,none,careless,none,none,none,guilty,to go to the library
+the boy is holding his fingers up.,friendliness,none,none,none,curious,gets hurt,to be helpful,none,happy,to get a splinter
+there is trees behind them.,friendliness,none,none,none,strong,none,none,none,happy,to be in a forest
+there is a fence in the back.,friendliness,none,none,none,cautious,none,none,none,safe,to keep the fence

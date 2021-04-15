@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a face on the table.,caution,none,none,none,curious,none,none,none,happy,to be noticed
+the boy is sitting a cup down.,caution,none,none,none,tired,none,to drink,none,happy,to drink the tea
+the boy is nt looking at the table.,caution,none,none,none,ignorant,gets yelled at,to be alone,none,sad,to eat
+the boy is smiling.,caution,none,none,none,friendly,none,none,none,happy,to smile
+the fan is plugged into the wall.,caution,none,none,none,lazy,gets hot,none,none,cool,to turn it off
+the cup is full of lemonade.,caution,none,none,none,thirsty,gets thirsty,none,to buy lemonade,satisfied,to drink the lemonade
+the boy is putting the cup by the outlet.,caution,none,none,none,helpful,none,to be helpful,to grab the cup,satisfied,to get a drink
+the cup is tipped slightly.,caution,none,none,none,clumsy,none,none,none,sad,to drink

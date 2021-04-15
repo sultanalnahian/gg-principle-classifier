@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are two boys , they are in a library.",empathy,none,none,none,young,none,none,none,happy,to read
+one boy is in a wheelchair.,empathy,none,none,none,disabled,gets hurt,none,none,sad,to get better
+"there is an umbrella on the ground , he is reaching for it.",empathy,none,none,none,careful,gets wet,to be careful,to be walking,prepared,to get a umbrella
+"the other boy has a book in his hand , he is looking down at the boy.",empathy,none,none,none,curious,none,to read,none,interested,to read
+there are near a bookshelf.,empathy,none,none,none,curious,none,none,none,interested,to read
+the boy is bending over in his wheel chair.,empathy,none,none,none,curious,gets hurt,to be in control,none,happy,to get up
+the umbrella is blue.,empathy,none,none,none,wet,none,none,none,wet,to get a towel
+the boy in the wheelchair is frowning.,empathy,none,none,none,mean,none,none,none,sad,to get up

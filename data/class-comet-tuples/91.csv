@@ -1,0 +1,8 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is looking at the door.,cleanliness,none,none,none,curious,none,to see who is at the door,none,curious,to leave
+the boy has his hand on the door.,cleanliness,none,none,none,curious,gets yelled at,to open the door,none,nervous,to open the door
+the boy is smiling.,cleanliness,none,none,none,friendly,none,none,none,happy,to smile
+the boy has a green stick in his hands.,cleanliness,none,none,none,playful,gets dirty,to play,none,happy,to play with the green stick
+the boy is holding the doorknob.,cleanliness,none,none,none,helpful,gets yelled at,to open the door,to walk to the door,nervous,to open the door
+the boy is outside.,cleanliness,none,none,none,curious,none,to play,none,happy,to play
+the boy is holding a broom stick.,cleanliness,none,none,none,careful,gets dirty,to clean up,none,tired,to clean up the mess

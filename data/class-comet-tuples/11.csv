@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there is a boy and a man.,responsibility,none,none,none,young,none,none,none,happy,to grow up
+they are both in the kitchen.,responsibility,none,none,none,hungry,none,none,to be in the kitchen,hungry,to eat
+"the boy is putting letters onto the table , the man is standing at the sink washing.",responsibility,none,none,none,clean,hands are wet,to clean up,to walk to the sink,tired,to clean up
+the boy is smiling down at the letters.,responsibility,none,none,none,curious,none,to be funny,none,happy,to read the letters
+the man is standing the near the sink.,responsibility,none,none,none,careful,none,to clean up,none,satisfied,to wash the dishes
+there is dish soap on the sink.,responsibility,none,none,none,dirty,gets dirty,none,to get soap,clean,to clean up
+there is a towel on the countertop.,responsibility,none,none,none,dry,none,to dry off,none,dry,to dry off
+the man has a towel in his hand.,responsibility,none,none,none,prepared,none,to dry off,none,prepared,to dry off
+there are three jars sitting on the countertop.,responsibility,none,none,none,patient,none,none,none,happy,to eat

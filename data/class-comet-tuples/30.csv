@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are two boys , it is raining very hard.",cooperation,none,none,none,scared,none,none,none,sad,to get a umbrella
+"the first boy is holding an umbrella he is looking back at the second boy , he.",cooperation,none,none,none,curious,he is holding the umbrella,to be careful,none,happy,to get the first boy 's attention
+"the second boy does not have an umbrella , he is trying to shield himself using his.",cooperation,none,none,none,clumsy,umbrella,to protect himself,to be in rain,safe,to stay dry
+the second boy is getting wet.,cooperation,none,none,none,wet,gets wet,none,none,wet,to dry off
+the boy steps in a puddle of water.,cooperation,none,none,none,clumsy,gets wet,none,none,sad,to clean up the puddle
+rain is hitting the umbrella.,cooperation,none,none,none,careless,gets wet,none,none,wet,to get out of the rain

@@ -1,0 +1,14 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is cleaning the living room.,assistiveness,none,none,none,tidy,gets dirty,to be clean,to get cleaning supplies,tired,to clean the rest of the house
+the mom is vacuuming the floor.,assistiveness,none,none,none,careless,gets dirty,to clean up,none,tired,to clean up
+the dad is washing the window.,assistiveness,none,none,none,helpful,gets dirty,to clean up,to get the water,clean,to clean up
+the boy is hiding.,assistiveness,none,none,none,scared,none,to be alone,none,scared,to get away
+the dad s back is turned away.,assistiveness,none,none,none,scared,none,none,none,sad,to get back
+the boy is smiling.,assistiveness,none,none,none,friendly,none,none,none,happy,to smile
+the boy is against the wall.,assistiveness,none,none,none,stubborn,none,none,none,angry,to get away
+the mom is pushing the vacuum.,assistiveness,none,none,none,active,gets tired,to clean up,none,tired,to clean up
+the boy is smiling behind the blue wall.,assistiveness,none,none,none,playful,none,none,none,happy,to laugh
+the father is cleaning.,assistiveness,none,none,none,responsible,gets dirty,to be clean,to get cleaning supplies,tired,to clean up
+the window.,assistiveness,none,none,none,curious,gets yelled at,none,none,happy,to get a drink
+the family is in the living room.,assistiveness,none,none,none,content,none,to be alone,to walk to the room,happy,to watch tv
+.,assistiveness,none,none,none,determined,none,to be a good citizen,none,happy,to get a drink

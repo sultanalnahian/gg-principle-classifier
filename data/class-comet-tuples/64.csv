@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are in the pool.,friendliness,none,none,none,playful,gets exercise,to have fun,to go to the pool,happy,to have fun
+the life guard is waving his hand.,friendliness,none,none,none,active,gets hit,to be helpful,none,happy,to get a drink
+the life guard is blowing his whistle.,friendliness,none,none,none,careless,none,to blow a whistle,none,happy,to blow the whistle
+the water is splashing.,friendliness,none,none,none,playful,gets wet,to have fun,none,happy,to swim
+there are two floaties by the pool.,friendliness,none,none,none,playful,gets wet,none,none,happy,to swim
+there are three kids in the pool.,friendliness,none,none,none,playful,gets exercise,none,to have a pool,happy,to have fun
+the first boy is splashing water everywhere.,friendliness,none,none,none,playful,gets wet,to have fun,to be playing,silly,to clean up the mess
+the girl is swimming away from the boy splashing water.,friendliness,none,none,to swim,scared,gets wet,to be alone,to be swimming,happy,to swim
+there is another boy with yellow floaties on.,friendliness,none,none,none,young,none,none,none,happy,to be a good boy
+he is shouting something.,friendliness,none,annoyed,none,loud,gets yelled at,to be heard,none,heard,to get attention

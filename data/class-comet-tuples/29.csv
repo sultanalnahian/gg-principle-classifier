@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there is a boy and a man , the man has a white coat on and is.",cooperation,none,none,none,young,none,to be a man,none,warm,to be a man
+he is frowning.,cooperation,none,none,none,annoyed,none,none,none,annoyed,to look at something else
+"the boy is looking away from the man , he has his arms crossed and is frowning.",cooperation,none,none,none,angry,eyes squint,to be alone,none,upset,to walk away
+they re at the doctors office.,cooperation,none,none,none,sick,gets examined,to get better,to get sick,better,to get better
+the doctor is sitting down.,cooperation,none,none,none,tired,gets a headache,to rest,to be sick,relieved,to get a prescription
+the man is resting his arm on the table.,cooperation,none,none,none,tired,none,to rest,none,relaxed,to relax

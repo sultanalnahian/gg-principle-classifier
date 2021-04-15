@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in his room.,cleanliness,none,none,none,curious,none,to be alone,to be in the room,happy,to play
+the room is messy.,cleanliness,none,none,none,messy,gets dirty,none,none,messy,to clean up
+the boy has a book in his hand.,cleanliness,none,none,none,studious,none,to read,none,smart,to read
+the boy has a bookbag in his other hand.,cleanliness,none,none,none,prepared,none,to be prepared,none,happy,to read
+the boy has both hands in the air.,cleanliness,none,none,none,playful,gets hit,to play,none,happy,to play
+the boy is screaming.,cleanliness,none,none,none,scared,gets scolded,none,none,scared,to run away
+the boy is frowning.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the boy is throwing his books and backpack in the air.,cleanliness,none,none,none,playful,gets caught,to play,to pick up the books,happy,to catch the backpack
+the boys room is a mess.,cleanliness,none,none,none,messy,none,none,none,upset,to clean up
+the lamp shade is tipped.,cleanliness,none,none,none,careless,none,none,none,embarrassed,to get a drink

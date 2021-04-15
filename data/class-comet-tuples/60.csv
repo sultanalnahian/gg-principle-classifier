@@ -1,0 +1,9 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is smiling.,cleanliness,none,none,none,friendly,none,none,none,happy,to smile
+the boy has no shirt on.,cleanliness,none,none,none,dirty,gets dirty,none,none,dirty,to go to the bathroom
+the boy has on blue shorts.,cleanliness,none,none,none,carefree,gets dirty,to be clothed,to buy shorts,happy,to go to the beach
+the window is open.,cleanliness,none,none,none,careless,gets yelled at,none,none,cold,to look outside
+the boy is in the bathroom.,cleanliness,none,none,none,scared,none,to be alone,to go to the bathroom,relieved,to wash his hands
+there is a yellow towel hanging over the window ledge.,cleanliness,none,none,none,dry,none,none,none,wet,to dry off
+the towel is dripping water.,cleanliness,none,none,none,wet,gets wet,to dry off,to get a towel,wet,to dry off
+the boy has a green shirt in one hand and a yellow towel in the other.,cleanliness,none,none,none,careless,none,to be dry,to have a yellow shirt,happy,to dry off

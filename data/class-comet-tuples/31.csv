@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there is a boy and a woman , the woman is a nurse , she has a.",cooperation,none,none,none,caring,none,to be a nurse,to be a nurse,happy,to be a good nurse
+"the boy is sitting on a table , his sleeve is pulled up , she is sticking.",cooperation,none,none,none,close,none,to be comfortable,to be in a hot place,uncomfortable,pushing
+the boy is in the doctor office.,cooperation,none,none,none,sick,gets examined,none,to get sick,worried,to get better
+the boy is looking away.,cooperation,none,none,none,scared,none,to be alone,none,sad,to look away
+the boy is sitting on the bed.,cooperation,none,none,none,lazy,none,to rest,to walk to the bed,tired,to sleep

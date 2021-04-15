@@ -1,0 +1,15 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+a boy and a girl are in the kitchen.,cleanliness,none,none,none,excited,none,none,to walk to the kitchen,happy,to eat
+the boy has one hand in the cookie jar.,cleanliness,none,none,none,greedy,gets dirty,to eat cookies,none,happy,to eat the cookie jar
+the boy is grabbing the cookie.,cleanliness,none,none,none,greedy,gets yelled at,to eat,to be hungry,satisfied,to eat the cookie
+the boy is holding his other hand towards the girl.,cleanliness,none,none,to get away,caring,gets slapped,to be affectionate,to be holding hands,happy,to kiss the girl
+the boy is looking at the girl the boy is smiling at the girl.,cleanliness,none,none,to smile back,curious,none,none,none,happy,to flirt
+the girl is washing her hands in the sink.,cleanliness,none,none,none,clean,gets dirty,to clean up,to get the soap,clean,to dry hands
+the girl is looking back at the boy.,cleanliness,none,none,none,curious,none,to be noticed,none,happy,to talk to the boy
+the girl is smiling.,cleanliness,none,happy,none,friendly,none,none,none,happy,to kiss her
+the cookie jar is blue with colorful designs.,cleanliness,none,none,none,careless,none,none,none,happy,to eat the cookie jar
+the kids are in the kitchen.,cleanliness,none,none,none,hungry,none,to eat,to walk to the kitchen,hungry,to eat
+the.,cleanliness,none,none,none,determined,none,to be a good friend,none,happy,to get a drink
+boy has his hand in a cookie jar.,cleanliness,none,none,none,greedy,gets dirty,to eat cookies,to be hungry,guilty,to eat the cookie jar
+the in boy is smiling at the girl.,cleanliness,none,happy,to smile back,friendly,none,none,none,happy,to flirt
+the girl has her hands in the sink.,cleanliness,none,none,none,dirty,gets dirty,to clean up,none,dirty,to wash their hands

@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy in the red shirt is holding a purple ball.,friendliness,none,none,none,playful,gets hit by the ball,to play a game,to pick up the ball,happy,to play with the ball
+the boy in green shirt is holding a blue ball.,friendliness,none,none,none,playful,gets hit by the ball,to play,to be playing with the boy,happy,to play with the ball
+the two boys are standing up.,friendliness,none,none,none,active,none,to be standing,none,happy,to go to the bathroom
+the girl in the purple shirt is holding a blue ball.,friendliness,none,none,none,playful,gets hit by the ball,to play a game,to pick up the blue ball,happy,to play with the blue ball
+they are at a bowling alley.,friendliness,none,none,none,athletic,gets sweaty,to have fun,to drive to the bowling alley,happy,to go home
+there are two boys and two girls.,friendliness,none,none,none,young,none,none,none,happy,to have fun
+one of the girls are rolling the bowling ball down the aisle.,friendliness,none,none,none,playful,gets sweaty,to have fun,to go to the bowling ball,happy,to win the game
+the other girl has a bowling ball in her hand and is looking at the first girl.,friendliness,none,none,to play,interested,gets hit,to play a game,to go to the bowling ball,excited,to win the game
+the two boys both have bowling balls in their hands and are talking to each other.,friendliness,none,none,to play,playful,none,to play,to have a ball,happy,to win

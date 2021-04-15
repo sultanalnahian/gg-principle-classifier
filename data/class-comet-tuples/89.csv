@@ -1,0 +1,15 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the family is sitting at the table.,politeness,none,none,none,hungry,eats,to eat,to be at the table,happy,to eat
+the table has a plate of pie on it.,politeness,none,none,none,hungry,gets dirty,none,to buy pie,full,to eat
+the boy has a glass of milk.,politeness,none,none,none,thirsty,gets thirsty,to drink milk,to go to the store,satisfied,to drink the milk
+the dad is smiling.,politeness,none,none,none,happy,none,none,none,happy,to be happy
+the dad is looking at the grandmother.,politeness,none,none,none,curious,none,to see the grandmother,none,happy,to talk to grandmother
+the grandmother is passing the boy a plate.,politeness,none,grateful,to eat,generous,none,to share,to get the plate,happy,to give the plate to the boy
+the grandmother is smiling at the boy.,politeness,none,happy,to smile back,friendly,none,none,none,happy,to smile
+the grandmother is looking at the boy.,politeness,none,none,none,curious,smiles,to see the boy,none,happy,to talk to the boy
+the boy is looking at the grandmother.,politeness,none,none,none,curious,none,to see the grandmother,none,happy,to ask grandmother questions
+the boy is smiling at the grandmother.,politeness,none,happy,to smile back,friendly,none,none,none,happy,to smile
+the grandmother is holding pie.,politeness,none,none,none,caring,gets dirty,to eat,to bake,happy,to eat
+the father and son are sitting at the table.,politeness,none,none,to eat,caring,none,to eat,to walk to the table,happy,to eat
+there s pie on the table.,politeness,none,none,none,hungry,none,none,to have a pie,full,to eat
+the family is in the kitchen.,politeness,none,none,none,responsible,none,to eat,to go to the kitchen,happy,to eat

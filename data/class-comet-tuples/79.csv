@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is looking at the mom.,friendliness,none,none,to talk to personx,curious,none,to see his mother,none,curious,to talk to the mom
+mom pulls out a box mom is looking at the boy.,friendliness,none,none,to get a gift,curious,gets yelled at,to see the boy,none,happy,to give the boy a gift
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile
+the boy has his hands up.,friendliness,none,none,none,careless,gets yelled at,to be a good son,none,guilty,to get a job
+there are books on the table.,friendliness,none,none,none,intellectual,none,none,none,smart,to read
+a glass cup is on the table.,friendliness,none,none,none,thirsty,none,to drink,to pour the tea,satisfied,to drink
+the boy has his hand on the glass.,friendliness,none,none,none,helpful,gets yelled at,to be helpful,none,happy,to get a glass
+the boy is smiling.,friendliness,none,none,none,friendly,none,none,none,happy,to smile
+there s a drink on the table.,friendliness,none,none,none,thirsty,none,to have a drink,to buy a drink,satisfied,to drink more
+the girl is laying out a game.,friendliness,none,happy,none,playful,wins,to win,to be playing,happy,to win

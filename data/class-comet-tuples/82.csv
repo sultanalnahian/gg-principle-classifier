@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in his room.,cleanliness,none,none,none,curious,none,to be alone,to be in the room,happy,to play
+the room is clean.,cleanliness,none,none,none,clean,none,to be clean,to clean,clean,to clean up
+the boy is smiling.,cleanliness,none,none,none,friendly,none,none,none,happy,to smile
+the boy is putting up laundry.,cleanliness,none,none,none,helpful,gets dirty,to be helpful,to get the laundry,tired,to clean up
+the boy has pants in his hands.,cleanliness,none,none,none,careless,gets dirty,to be a good son,none,embarrassed,to hide
+the boy is folding his clothes.,cleanliness,none,none,none,helpful,gets dirty,to be neat,to get the clothes,good,to fold the clothes
+the boy is in his bedroom.,cleanliness,none,none,none,curious,none,to be alone,to walk to the bedroom,happy,to play
+the window and curtains are open.,cleanliness,none,none,none,careless,gets yelled at,none,none,relaxed,to see outside
+the boy is smiling.,cleanliness,none,none,none,friendly,none,none,none,happy,to smile
