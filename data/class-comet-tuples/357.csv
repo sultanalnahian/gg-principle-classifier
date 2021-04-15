@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the kitchen.,cleanliness,none,none,none,hungry,none,to eat,to walk to the kitchen,hungry,to eat
+the boy washed the dishes.,cleanliness,none,none,none,helpful,gets dirty,to be helpful,to get the dishes,satisfied,to clean up
+the boy is adding dishes into the dishwasher.,cleanliness,none,none,none,responsible,gets dirty,to clean up,to get the dishes out,tired,to clean up
+the boy has a rag in his hand.,cleanliness,none,none,none,careless,none,to be a good person,none,happy,to use the rag
+the boy is in his driveway.,cleanliness,none,none,none,curious,none,to be with his friend,to walk to the driveway,happy,to go inside

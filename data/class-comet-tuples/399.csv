@@ -1,0 +1,4 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+"there are three boys and one girl , they are running in a race.",friendliness,none,none,none,athletic,gets sweaty,to be the best,to be in school,excited,to win
+"two of the boys are ahead of the third boy , the girl is also ahead of.",friendliness,none,none,to win,competitive,none,none,none,sad,to be the first one
+they are on a track.,friendliness,none,none,none,athletic,gets sweaty,to be competitive,to get on the track,happy,to win the race

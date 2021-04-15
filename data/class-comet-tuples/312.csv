@@ -1,0 +1,11 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in his room.,respect,none,none,none,curious,none,to be alone,to be in the room,happy,to play
+the boy is sitting at a table.,respect,none,none,none,hungry,none,to eat,to walk to the table,happy,to eat
+the boy is frowning.,respect,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy
+the table has puzzle pieces on it.,respect,none,none,none,curious,gets yelled at,none,none,confused,to solve the puzzle
+the boy is putting a puzzle together.,respect,none,none,none,skilled,none,to be helpful,to have a puzzle,happy,to solve the puzzle
+the boy has a puzzle piece in his hands.,respect,none,none,none,curious,gets yelled at,to solve a puzzle,to have a puzzle,accomplished,to solve the puzzle
+the dad is standing in the doorway.,respect,none,none,none,curious,none,to be noticed,none,good,to say hello
+the dad is looking at the son.,respect,none,none,none,curious,none,to see the son,none,happy,to hug the son
+the dad is frowning at the son.,respect,none,none,to cry,angry,none,none,none,annoyed,to yell at the son
+the dad has one hand on the door frame.,respect,none,none,none,careful,none,to be safe,none,happy,to open the door

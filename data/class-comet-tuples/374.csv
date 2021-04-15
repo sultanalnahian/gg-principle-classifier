@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is outside.,cleanliness,none,none,none,curious,none,to play,none,happy,to play
+the boy has safety gear on.,cleanliness,none,none,none,responsible,none,to be safe,to have a gun,safe,to be safe
+the boy has a helmet in his hands.,cleanliness,none,none,none,prepared,gets hit,to protect his head,to have a helmet,safe,to protect his head
+the boy left the skateboard outside.,cleanliness,none,none,none,careless,gets yelled at,none,to be walking,sad,to go back inside
+the skateboard is under the car.,cleanliness,none,none,none,athletic,gets dirty,to have fun,to get the skateboard,happy,to get a ride

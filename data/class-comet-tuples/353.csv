@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the kids are playing baseball.,friendliness,none,none,none,athletic,gets exercise,to have fun,to get the kids together,happy,to have fun
+the boy in red is smiling.,friendliness,none,none,none,happy,none,none,none,happy,to smile
+the boy in the yellow is pointing at the baseball player.,friendliness,none,none,to play baseball,interested,gets yelled at,to be competitive,to be playing baseball,happy,to play baseball
+the catcher missed the ball.,friendliness,none,none,none,unskilled,gets yelled at,none,to be playing baseball,sad,to play baseball

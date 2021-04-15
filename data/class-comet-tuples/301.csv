@@ -1,0 +1,10 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is looking at the cat.,cleanliness,none,none,none,curious,gets bitten,to see the cat,none,happy,to pet the cat
+the boy is frowning at the cat.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to pet the cat
+the cat is looking at the boy.,cleanliness,none,none,none,curious,none,to see the boy,none,happy,to pet the cat
+there is milk in the bowl.,cleanliness,none,none,none,hungry,none,none,to have milk,satisfied,to eat
+there is milk spilled by the bowl.,cleanliness,none,none,none,clumsy,none,none,none,sad,to clean up the mess
+the mom is looking at the spill.,cleanliness,none,none,none,curious,none,none,none,annoyed,to clean up
+the mom is pointing at the spill.,cleanliness,none,none,none,curious,none,to be helpful,none,annoyed,to clean up
+the mom is frowning.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to get a drink
+the mom is holding a laundry basket.,cleanliness,none,none,none,responsible,gets dirty,to clean up,to have laundry,tired,to clean up

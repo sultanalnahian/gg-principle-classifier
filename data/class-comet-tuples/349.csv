@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is leaving his room.,cleanliness,none,none,none,tired,none,to go to bed,to open the door,relieved,to go to bed
+the boy s room is messy.,cleanliness,none,none,none,messy,none,none,none,dirty,to clean up
+there is a note on the dresser.,cleanliness,none,none,none,curious,none,none,none,curious,to read the note
+the boy has his baseball gear.,cleanliness,none,none,none,athletic,none,to be prepared,to buy a baseball glove,happy,to play baseball
+the boy has a baseball bat in his hands.,cleanliness,none,none,none,prepared,gets hit,to play baseball,to pick up the bat,ready,to run away
+the boy is frowning.,cleanliness,none,none,none,annoyed,none,none,none,annoyed,to get away from the boy

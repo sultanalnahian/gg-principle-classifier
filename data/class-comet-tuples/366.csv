@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+there are two kids walking.,politeness,none,none,none,young,none,none,none,happy,to have fun
+the kids are smiling.,politeness,none,none,none,happy,none,none,none,happy,to have fun
+the kids are looking at each other.,politeness,none,none,none,curious,none,none,none,happy,to interact
+the boy in red is watching them walk away.,politeness,none,none,none,observant,none,to be alone,none,sad,to go home
+the boy in red is frowning.,politeness,none,none,none,angry,none,none,none,angry,to get away from the boy
+the boy in purple has a notebook in his hands.,politeness,none,none,none,curious,none,to read,none,happy,to read the notebook

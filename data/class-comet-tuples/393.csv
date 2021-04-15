@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is smiling at the dog.,friendliness,none,none,none,happy,none,none,none,happy,to smile
+the boy has his arms crossed.,friendliness,none,none,none,mean,none,to be in control,none,angry,to be in control
+the dog is looking at the boy.,friendliness,none,none,none,curious,none,to see the boy,none,happy,to pet the dog
+the dog is smiling back at the boy.,friendliness,none,happy,to smile back,friendly,none,to be friendly,none,happy,to say hello

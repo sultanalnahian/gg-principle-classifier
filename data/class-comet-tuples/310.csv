@@ -1,0 +1,7 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in his room.,cleanliness,none,none,none,curious,none,to be alone,to be in the room,happy,to play
+the room is messy.,cleanliness,none,none,none,messy,gets dirty,none,none,messy,to clean up
+the boy is cleaning his room.,cleanliness,none,none,none,tidy,gets dirty,to be clean,to get cleaning supplies,satisfied,to clean the room
+he has a pink jacket in his hands.,cleanliness,none,none,none,prepared,gets cold,to be warm,to go to the store,warm,to wear the jacket
+the boy grabs the purple jacket off the chair.,cleanliness,none,none,none,aggressive,gets yelled at,to be warm,to be in the presence of a boy,happy,to go to the store
+the window is open in the boys bedroom.,cleanliness,none,none,none,careless,gets yelled at,none,to walk to the window,happy,to look outside

@@ -1,0 +1,6 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+the boy is in the kitchen.,cooperation,none,none,none,hungry,none,to eat,to walk to the kitchen,hungry,to eat
+the boy is looking the draw for a spoon.,cooperation,none,none,none,curious,none,to be helpful,none,happy,to eat
+there is a box of cereal on the countertop.,cooperation,none,none,none,hungry,none,none,to go to the kitchen,hungry,to eat the cereal
+there is a carton of milk on the countertop.,cooperation,none,none,none,hungry,none,none,to buy milk,hungry,to drink milk
+there is a bowl of cereal on the countertop.,cooperation,none,none,none,hungry,gets dirty,none,to buy cereal,hungry,to eat

@@ -1,0 +1,5 @@
+sentence,principle,oEffect,oReact,oWant,xAttr,xEffect,xIntent,xNeed,xReact,xWant
+you have turkey s in the cornfield.,law-abiding,none,none,none,hungry,gets dirty,none,to buy turkey,hungry,to eat
+there is corn on the ground.,law-abiding,none,none,none,hungry,none,none,none,hungry,to eat
+the turkey is frowning.,law-abiding,none,none,none,annoyed,none,none,none,annoyed,to eat
+the turkey is walking through the cornfield.,law-abiding,none,none,none,curious,gets dirty,to get to the farm,to be walking,hungry,to eat
