@@ -16,11 +16,11 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
-import torch
+#import torch
 
-from cogdl import experiment
-from cogdl.data import Data
-from cogdl.datasets import BaseDataset, register_dataset
+# from cogdl import experiment
+# from cogdl.data import Data
+# from cogdl.datasets import BaseDataset, register_dataset
 #https://rusty1s.github.io/pycogdl/build/html/notes/create_dataset.html
 
 # edgeMap = {
@@ -64,6 +64,7 @@ principleMap = {
 				'law-abiding':'2',
 				'self-care':'3',
 				'cooperation':'4',
+				'sharing':'4',
 				'assistiveness':'5',
 				'patience':'6',
 				'caution':'7',
@@ -75,6 +76,15 @@ principleMap = {
 				'respect':'13',
 				'enthusiasm':'14',
 				'courtesy':'15',
+				'responsibility':'16',
+				'supportive':'5',
+				'attentiveness':'0',
+				'empathy ':'17',
+				'empathy':'17',
+				'confidence': '18',
+				'??':'19',
+				'???':'19',
+				'none':'19'
 				}
 ##### .edgelist utils and test #####
 
@@ -115,7 +125,7 @@ def extractWordListFromStruct( struct ):
 	st = '{}'.format(struct)
 	#an_only = re.sub(r'\W+', '', st)
 	an_only = re.sub(r'[^A-Za-z0-9 ]+', '', st)
-	return an_only.split()
+	return list(set(an_only.split()))
 
 #so = extractWordListFromStruct(testCometEdges)
 
@@ -187,7 +197,7 @@ model.wv.save_word2vec_format(EMBEDDING_FILENAME)
 
 actualCometOutput = [] 
 #template = {'gg':-1, 'principle':'patience' 's1':'This is the sentence', 'e1':[('PersonX', 'wants', 'food'),('PersonX', 'feels', 'hungry')]}
-template = {'gg':-1, 'principle':'patience', 'tuples':[]}
+template = {'gg':-1, 'principle':'19', 'tuples':[]}
 
 for filename in os.listdir('./data/class-comet-tuples'):
 	#print(filename)
@@ -203,10 +213,8 @@ for filename in os.listdir('./data/class-comet-tuples'):
 		for row in csvreader:
 			rows.append(row)
 
-		t = template
+		t = template.copy()
 		t['gg'] = currentID
-		t['principle'] = principleMap["patience"]  #!!!!!!!!!!!##################TODO####################
-
 
 		tups = []
 		for r in rows:
@@ -214,27 +222,45 @@ for filename in os.listdir('./data/class-comet-tuples'):
 				t1 = "They"
 				if idf == 0:
 					pass
+				elif idf == 1:
+					if f != '':
+						t['principle'] = principleMap[f]
+						assert(['principle'] != "")
+					pass
 				else:
-					if idf <= 3:
+					if idf <= 4:
 						t1 = "Others"
 					if f == 'none':
 						pass
 					else:
 						assert(f != 'none')
 						assert(idf != 0)
-						tups.append((t1,idf,f))
+						tups.append((t1,idf-1,f)) #To account for new principle column
 
 		t['tuples'] = tups
+		#print(t)
 		actualCometOutput.append(t)
+		#print(len(actualCometOutput))
 
+print(len(actualCometOutput))
 #print(actualCometOutput)
-#print('----------------------------------')
+print('----------------------------------')
 so = extractWordListFromStruct(actualCometOutput)
 #print(so)
+print('Number of unique words: {}'.format(len(so)))
+print('----------------------------------')
 do = mapWordsToUniqueIntegers(so,actualCometOutput)
 #print(do)
+#print(len(do))
+print('Word to integer map: {}'.format(do))
 #print(actualCometOutput[0]['tuples'])
-wf = convertCometEdgesToWeightAndFormat(actualCometOutput[0]['tuples'],  do ) 
+for w in actualCometOutput:
+	#print(w['tuples'])
+	print(w['gg'])
+	print(w['principle'])
+	wf = convertCometEdgesToWeightAndFormat(w['tuples'],  do )
+	print(wf)
+	#print(wf)
 
 #TODO: Convert to compatible graph files (see /data/ subfolder) ... use the TU dataset format (https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets)
 #Use COGDL to run experiments
