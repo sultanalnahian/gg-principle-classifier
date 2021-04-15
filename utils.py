@@ -214,7 +214,7 @@ for w in actualCometOutput:
 	wf = convertCometEdgesToWeightAndFormat(w['tuples'],  do )
 	fn = '{}-{}.edgelist'.format(w['gg'],w['principle'])
 	edgesToFile(wf,fn)
-	embedEdgeList(fn)
+	embedEdgelist(fn)
 end = time.time()
 print('Generating embeddings took {} seconds.'.format(end - start))
 
