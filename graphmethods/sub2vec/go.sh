@@ -1,9 +1,9 @@
 #!/bin/bash -ex
 for i in 1 2 3 4 5
 do
-  for DS in 'IMDB-BINARY' 'IMDB-MULTI'
+  for DS in 'Principles'
   do
-   python3 src/main.py --input ../data/$DS --preprocessed-input preprocessed_dataset/$DS --d 512 --property n
-   python3 src/main.py --input ../data/$DS --preprocessed-input preprocessed_dataset/$DS --d 512 --property s 
+   python src/main.py --input ../data/Principles --preprocessed-input preprocessed_dataset/Principles --d 512 --property n
+   python src/main.py --input ../data/Principles --preprocessed-input preprocessed_dataset/Principles --d 512 --property s 
   done
 done
