@@ -131,12 +131,12 @@ def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 ##### node2vec utils and test #####
 
 def embedEdgelist( fileName, dimensions=64, walk_length=30, num_walks=200, workers=16 ):
-	name = fileName.replace('.csv','')
+	name = fileName.replace('.edgelist','')
 	EMBEDDING_FILENAME = './data/embeddings/' + name + '.emb'
 	#EMBEDDING_MODEL_FILENAME = './data/embeddings/embeddings.model'
 
 	# Create a graph
-	graph = nx.read_weighted_edgelist( fileName )
+	graph = nx.read_weighted_edgelist( './data/edges/'+fileName )
 	# Precompute probabilities and generate walks
 	node2vec = Node2Vec(graph, dimensions=dimensions, walk_length=walk_length, num_walks=num_walks, workers=workers)
 	## if d_graph is big enough to fit in the memory, pass temp_folder which has enough disk space
