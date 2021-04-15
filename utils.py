@@ -132,22 +132,25 @@ def convertCometEdgesToWeightAndFormat( edgeArray, wordMap ):
 
 def embedEdgelist( fileName, dimensions=64, walk_length=30, num_walks=200, workers=16 ):
 	name = fileName.replace('.edgelist','')
+	print(name)
 	EMBEDDING_FILENAME = './data/embeddings/' + name + '.emb'
 	#EMBEDDING_MODEL_FILENAME = './data/embeddings/embeddings.model'
+	try:
+		# Create a graph
+		graph = nx.read_weighted_edgelist( './data/edges/'+fileName )
+		# Precompute probabilities and generate walks
+		node2vec = Node2Vec(graph, dimensions=dimensions, walk_length=walk_length, num_walks=num_walks, workers=workers)
+		## if d_graph is big enough to fit in the memory, pass temp_folder which has enough disk space
+		# Note: It will trigger "sharedmem" in Parallel, which will be slow on smaller graphs
+		#node2vec = Node2Vec(graph, dimensions=64, walk_length=30, num_walks=200, workers=4, temp_folder="/mnt/tmp_data")
+		# Embed
+		model = node2vec.fit(window=10, min_count=1, batch_words=4)  # Any keywords acceptable by gensim.Word2Vec can be passed, `dimensions` and `workers` are automatically passed (from the Node2Vec constructor)
 
-	# Create a graph
-	graph = nx.read_weighted_edgelist( './data/edges/'+fileName )
-	# Precompute probabilities and generate walks
-	node2vec = Node2Vec(graph, dimensions=dimensions, walk_length=walk_length, num_walks=num_walks, workers=workers)
-	## if d_graph is big enough to fit in the memory, pass temp_folder which has enough disk space
-	# Note: It will trigger "sharedmem" in Parallel, which will be slow on smaller graphs
-	#node2vec = Node2Vec(graph, dimensions=64, walk_length=30, num_walks=200, workers=4, temp_folder="/mnt/tmp_data")
-	# Embed
-	model = node2vec.fit(window=10, min_count=1, batch_words=4)  # Any keywords acceptable by gensim.Word2Vec can be passed, `dimensions` and `workers` are automatically passed (from the Node2Vec constructor)
-
-	# Save embeddings for later use
-	model.wv.save_word2vec_format(EMBEDDING_FILENAME)
-
+		# Save embeddings for later use
+		model.wv.save_word2vec_format(EMBEDDING_FILENAME)
+	except Exception as e:
+		print(e)
+		pass
 	# # Save model for later use
 	# model.save(EMBEDDING_MODEL_FILENAME)
 
@@ -189,6 +192,7 @@ for filename in os.listdir('./data/class-comet-tuples'):
 				else:
 					if idf <= 4:
 						t1 = "Others"
+						tups.append((t1,idf-1,f))
 					else:
 						assert(idf != 0)
 						tups.append((t1,idf-1,f)) #To account for new principle column
@@ -210,14 +214,60 @@ do = mapWordsToUniqueIntegers(so,actualCometOutput)
 
 
 start = time.time()
-for w in actualCometOutput:
-	wf = convertCometEdgesToWeightAndFormat(w['tuples'],  do )
-	fn = '{}-{}.edgelist'.format(w['gg'],w['principle'])
-	edgesToFile(wf,fn)
-	embedEdgelist(fn)
-end = time.time()
-print('Generating embeddings took {} seconds.'.format(end - start))
 
+#Formatting for use with COGDL
+
+# n = total number of nodes
+# m = total number of edges
+# N = number of graphs
+# DS_A.txt (m lines): sparse (block diagonal) adjacency matrix for all graphs, each line corresponds to (row, col) resp. (node_id, node_id). All graphs are undirected. Hence, DS_A.txt contains two entries for each edge.
+# DS_graph_indicator.txt (n lines): column vector of graph identifiers for all nodes of all graphs, the value in the i-th line is the graph_id of the node with node_id i
+# DS_graph_labels.txt (N lines): class labels for all graphs in the data set, the value in the i-th line is the class label of the graph with graph_id i
+# DS_node_labels.txt (n lines): column vector of node labels, the value in the i-th line corresponds to the node with node_id i
+# There are optional files if the respective information is available:
+
+# DS_edge_labels.txt (m lines; same size as DS_A_sparse.txt): labels for the edges in DS_A_sparse.txt
+# DS_edge_attributes.txt (m lines; same size as DS_A.txt): attributes for the edges in DS_A.txt
+# DS_node_attributes.txt (n lines): matrix of node attributes, the comma seperated values in the i-th line is the attribute vector of the node with node_id i
+# DS_graph_attributes.txt (N lines): regression values for all graphs in the data set, the value in the i-th line is the attribute of the graph with graph_id i
+
+f1 = open('./data/tu-format/principles_A.txt','a')
+f2 = open('./data/tu-format/principles_graph_indicator.txt','a')
+f3 = open('./data/tu-format/principles_graph_labels.txt','a')
+f4 = open('./data/tu-format/principles_node_labels.txt','a')
+f5 = open('./data/tu-format/principles_edge_labels.txt','a')
+
+for i in range(0,len(so)):
+	f4.write('{}\n'.format(i)) #Just label the nodes with their id
+	
+counter = 0
+for wx in actualCometOutput:
+	print(wx)
+	counter += 1
+	print(str(counter))
+	wf = convertCometEdgesToWeightAndFormat(wx['tuples'],  do )
+	#print(len(wf))
+	for edge in wf:
+		edg = edge.split(' ')
+		f1.write('{}, {}\n'.format(edg[0],edg[2])) #Adjacency
+		f2.write('{}\n'.format(counter)) #Which graph?
+		f5.write('{}\n'.format(edg[1]))
+	f3.write('{}\n'.format(wx['principle'])) #What's the label/class for the graph
+
+	###Uncomment below if you want to generate embeddings for each separate edgelist (probably dont) #########
+
+	#fn = '{}-{}.edgelist'.format(w['gg'],w['principle'])
+	#edgesToFile(wf,fn)
+	#embedEdgelist(fn)
+
+end = time.time()
+print('Generating graphfiles took {} seconds.'.format(end - start))
+#print('Generating embeddings took {} seconds.'.format(end - start))
+f1.close()
+f2.close()
+f3.close()
+f4.close()
+f5.close()
 #TODO: Convert to compatible graph files (see /data/ subfolder) ... use the TU dataset format (https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets)
 #Use COGDL to run experiments
 
@@ -232,20 +282,10 @@ print('Generating embeddings took {} seconds.'.format(end - start))
 #     :undoc-members:
 #     :show-inheritance:
 
-#TODO: node2vec will generate embeddings for each node id (integer) (see demo .emb file)
-#Take the embedding for the corresponding nodeID and match it for all tuples in a single gg image's description sentences
-#Concatenate these vectors
-#Pad or just include the "none" values so the vectors are the right size
+
+
 #Associate principle for that set of discriptions with the newly created vector, save to file
-
-#TODO: For each GG object received from Nahian (containing gg id, principle classification, sentences and extracted triples):
-			#Generate a combined vector embedding of all triples
-				#Save in a file with principle,vector_embedding
-
-#		Read the file in
-#		Train the classifier (Train/Test/Val split)
-
-
+#run train.py (read in embeddings)
 # # basic usage
 # experiment(task="node_classification", dataset="cora", model="gcn")
 
@@ -325,16 +365,3 @@ print('Generating embeddings took {} seconds.'.format(end - start))
 #   year   = {2016},
 #   url    = {http://graphkernels.cs.tu-dortmund.de}
 # }
-# n = total number of nodes
-# m = total number of edges
-# N = number of graphs
-# DS_A.txt (m lines): sparse (block diagonal) adjacency matrix for all graphs, each line corresponds to (row, col) resp. (node_id, node_id). All graphs are undirected. Hence, DS_A.txt contains two entries for each edge.
-# DS_graph_indicator.txt (n lines): column vector of graph identifiers for all nodes of all graphs, the value in the i-th line is the graph_id of the node with node_id i
-# DS_graph_labels.txt (N lines): class labels for all graphs in the data set, the value in the i-th line is the class label of the graph with graph_id i
-# DS_node_labels.txt (n lines): column vector of node labels, the value in the i-th line corresponds to the node with node_id i
-# There are optional files if the respective information is available:
-
-# DS_edge_labels.txt (m lines; same size as DS_A_sparse.txt): labels for the edges in DS_A_sparse.txt
-# DS_edge_attributes.txt (m lines; same size as DS_A.txt): attributes for the edges in DS_A.txt
-# DS_node_attributes.txt (n lines): matrix of node attributes, the comma seperated values in the i-th line is the attribute vector of the node with node_id i
-# DS_graph_attributes.txt (N lines): regression values for all graphs in the data set, the value in the i-th line is the attribute of the graph with graph_id i
