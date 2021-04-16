@@ -200,13 +200,13 @@ for filename in os.listdir('./data/class-comet-tuples'):
 		t['tuples'] = tups
 		if len(tups) > mostRelations:
 			mostRelations = len(tups)
-			print('New largest set of relations: {}'.format(len(tups))) #Relations range between 30 and 156
+			#print('New largest set of relations: {}'.format(len(tups))) #Relations range between 30 and 156
 		actualCometOutput.append(t)
 
 
 print('----------------------------------')
 so = extractWordListFromStruct(actualCometOutput)
-#print(so)
+print(so)
 print('Number of unique words: {}'.format(len(so)))
 print('----------------------------------')
 do = mapWordsToUniqueIntegers(so,actualCometOutput)
@@ -231,28 +231,75 @@ start = time.time()
 # DS_node_attributes.txt (n lines): matrix of node attributes, the comma seperated values in the i-th line is the attribute vector of the node with node_id i
 # DS_graph_attributes.txt (N lines): regression values for all graphs in the data set, the value in the i-th line is the attribute of the graph with graph_id i
 
+#cogdl = [45, 72, 81, 72, 99, 72, 90, 81, 54, 90, 72, 63, 72, 81, 72, 81, 54, 72, 63, 36, 99, 72, 81, 27, 63, 72, 99, 90, 108, 45, 54, 90, 54, 63, 81, 63, 72, 81, 90, 81, 63, 81, 18, 90, 90, 63, 81, 63, 81, 63, 54, 54, 36, 99, 63, 45, 90, 54, 117, 81, 63, 36, 72, 126, 90, 27, 36, 36, 63, 63, 54, 36, 72, 54, 36, 54, 36, 72, 72, 72, 90, 54, 72, 54, 0, 72, 81, 63, 54, 45, 63, 63, 81, 54, 54, 108, 81, 63, 45, 81, 90, 72, 63, 72, 90, 54, 36, 81, 27, 27, 63, 81, 63, 36, 81, 72, 72, 72, 90, 63, 81, 81, 81, 72, 63, 72, 54, 72, 63, 90, 63, 81, 63, 72, 36, 54, 90, 81, 54, 63, 81, 72, 63, 54, 63, 81, 27, 63, 72, 72, 54, 63, 90, 54, 63, 54, 63, 63, 54, 72, 54, 135, 45, 54, 72, 36, 72, 63, 72, 63, 81, 81, 63, 54, 72, 54, 54, 63, 45, 45, 72, 45, 36, 72, 45, 72, 54, 54, 36, 63, 72, 63, 63, 45, 54, 54, 54, 36, 54, 63, 72, 27, 54, 81, 72, 54, 54, 54, 81, 72, 54, 72, 54, 54, 63, 81, 72, 36, 63, 63, 54, 54, 81, 54, 54, 45, 81, 72, 54, 81, 63, 108, 54, 63, 63, 45, 54, 54, 90, 72, 63, 90, 99, 63, 63, 72, 81, 63, 90, 81, 63, 72, 45, 54, 63, 45, 45, 81, 63, 45, 45, 45, 72, 45, 63, 36, 45, 54, 117, 54, 45, 45, 36, 54, 45, 36, 54, 45, 54, 90, 45, 45, 72, 36, 54, 36, 54, 45, 36, 54, 72, 45, 45, 63, 45, 45, 45, 54, 54, 54, 45, 90, 45, 54, 54, 54, 45, 54, 45, 63, 54, 63, 81, 54, 45, 36, 54, 54, 45, 45, 54, 54, 45, 108, 45, 36, 36, 36, 54, 36, 63, 36, 45, 27, 63, 99, 63, 54, 72, 36, 45, 63, 72, 54, 45, 72, 117, 54, 63, 63, 36, 27, 45, 63, 54, 27, 27, 63, 54, 63, 36, 54, 36, 63, 81, 45, 63, 81, 72, 36, 63, 45, 63, 54, 72, 54, 99, 45, 54, 99, 63, 45, 36, 72, 63, 63, 36, 45, 45, 72, 90, 54, 54, 81, 72, 63, 45, 63, 45, 81, 81, 117, 45, 27, 54, 90, 72, 36, 36, 90, 45, 90, 99, 72, 45, 72, 54, 45, 45, 81, 54, 63, 54, 108, 54, 36, 45, 36, 63, 36, 45, 36, 63, 36, 90, 54, 54, 54, 45, 63, 36, 81, 27, 45, 72, 63, 81, 90, 36, 63, 45, 54, 63, 63, 45, 72, 63, 81, 63, 27, 36, 54, 36, 63, 72, 54, 72, 54, 63, 63, 45, 72, 63, 72, 54, 45, 45, 81, 45, 90, 36, 63, 36, 36, 54, 45, 72, 45, 63, 27, 54, 72, 72, 36, 54, 45, 54, 45, 72, 72, 45, 99, 72, 54, 36, 45, 36, 63, 54, 36, 63, 36, 81, 63, 54, 63, 36, 63, 45, 81, 54, 63, 36, 90, 36, 54, 63, 45, 63, 72, 63, 63, 27, 54, 72, 72, 81, 63, 45, 54, 63, 36, 81, 81, 63, 72, 72, 45, 36, 45, 54, 63, 45, 72, 45, 63, 54, 72, 72, 54, 63, 54, 45, 72, 36, 63, 81, 72, 90, 63, 81, 81, 72, 63, 45, 45, 54, 72, 63, 72, 45, 81, 63, 63, 54, 45, 72, 45, 63, 54, 81, 81, 72, 72, 81, 54, 63, 63, 72, 63, 108, 90, 90, 54, 63, 144, 63, 81, 81, 72, 63, 54, 72, 45, 45, 72, 63, 9, 81, 90, 72, 72, 45, 72, 72, 81, 72, 81, 99, 72, 72, 72, 36, 81, 90, 54, 72, 63, 45, 63, 72, 9, 9, 9, 99, 90, 63, 54, 45, 63, 72, 72, 54, 90, 63, 63, 126, 54, 72, 72, 54, 54, 72, 54, 45, 45, 81, 54, 126, 54, 54, 36, 72, 63, 99, 9, 9, 9, 63, 171, 54, 81, 9, 63, 54, 72, 63, 63, 45, 63, 117, 72, 207, 234, 9, 9, 36, 63, 45, 45, 81, 99, 9, 63, 90, 54, 72, 45, 63, 72, 72, 45, 126, 153, 99, 9, 81, 9, 9, 9, 81, 81, 90, 90, 9, 54, 36, 9, 36, 36, 63, 81, 63, 63, 162, 81, 54, 54, 81, 45, 54, 63, 36, 36, 36, 81, 36, 81, 36, 9, 54, 54, 36, 45, 72, 54, 126, 9, 9, 9, 9, 36, 63, 90, 36, 45, 45, 90, 36, 81, 45, 63, 45, 54, 36, 81, 45, 36, 72, 90, 36, 36, 9, 54, 45, 63, 54, 36, 9, 9, 90, 9, 9, 9, 36, 9, 45, 81, 81, 45, 63, 81, 45, 45, 45, 54, 45, 54, 54, 9, 9, 9, 99, 72, 54, 36, 72, 9, 9, 9, 9, 9, 9, 126, 9, 63, 45, 45, 36, 45, 36, 45, 45, 54, 108, 36, 36, 63, 72, 36, 45, 54, 54, 9, 9, 108, 9, 9, 9, 54, 36, 27, 90, 36, 45, 45, 81, 63, 36, 54, 63, 9, 9, 9, 72, 36, 36, 126, 9, 9, 63, 9, 9, 63, 54, 45, 36, 9, 126, 9, 54, 45, 63, 36, 36, 54, 36, 36, 72, 126, 63, 90, 99, 90, 81, 135, 126, 54, 81]
+#print('COGDL Error #:{}'.format(sum(cogdl)))
+total1 = 0
+total2 = 0
+total3 = 0
+total4 = 0
+total5 = 0
 f1 = open('./data/tu-format/principles_A.txt','a')
 f2 = open('./data/tu-format/principles_graph_indicator.txt','a')
 f3 = open('./data/tu-format/principles_graph_labels.txt','a')
 f4 = open('./data/tu-format/principles_node_labels.txt','a')
 f5 = open('./data/tu-format/principles_edge_labels.txt','a')
 
-for i in range(0,len(so)):
-	f4.write('{}\n'.format(i)) #Just label the nodes with their id
-	
+# for i in range(0,len(so)):
+# 	f4.write('{}\n'.format(i))
+# 	total4 += 1 #Just label the nodes with their id
+
+nodeIDmap = {}
 counter = 0
+nodeidcounter = 1
+
 for wx in actualCometOutput:
-	print(wx)
+	#print(wx)
+
 	counter += 1
-	print(str(counter))
+	#print(str(counter))
 	wf = convertCometEdgesToWeightAndFormat(wx['tuples'],  do )
 	#print(len(wf))
 	for edge in wf:
 		edg = edge.split(' ')
-		f1.write('{}, {}\n'.format(edg[0],edg[2])) #Adjacency
-		f2.write('{}\n'.format(counter)) #Which graph?
-		f5.write('{}\n'.format(str(int(edg[1])-1)))
-	f3.write('{}\n'.format(wx['principle'])) #What's the label/class for the graph
+		if edg[0] in nodeIDmap and edg[2] in nodeIDmap:
+			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]])) #Adjacency
+			total1 += 1
+		elif edg[0] in nodeIDmap and edg[2] not in nodeIDmap:
+			nodeIDmap[edg[2]] = nodeidcounter
+			nodeidcounter += 1
+			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
+			f4.write('{}\n'.format(edg[2]))
+			total1 += 1
+			total2 += 1
+			total4 += 1
+		elif edg[0] not in nodeIDmap and edg[2] in nodeIDmap:
+			nodeIDmap[edg[0]] = nodeidcounter
+			nodeidcounter += 1
+			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
+			f4.write('{}\n'.format(edg[0]))
+			total1 += 1
+			total2 += 1
+			total4 += 1
+		else:
+			nodeIDmap[edg[0]] = nodeidcounter
+			f4.write('{}\n'.format(edg[0]))
+			nodeidcounter += 1
+			nodeIDmap[edg[2]] = nodeidcounter
+			f4.write('{}\n'.format(edg[2]))
+			nodeidcounter += 1
+			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
+			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+			total1 += 1
+			total2 += 2
+			total4 += 2
+
+		f5.write('{}\n'.format(str(int(edg[1])-1))) #edge attribute
+		total5 += 1
+	f3.write('{}\n'.format(wx['principle']))
+	total3 += 1 #What's the label/class for the graph
 
 	###Uncomment below if you want to generate embeddings for each separate edgelist (probably dont) #########
 
@@ -262,6 +309,7 @@ for wx in actualCometOutput:
 
 end = time.time()
 print('Generating graphfiles took {} seconds.'.format(end - start))
+print('Total writes: All edges:{} Node Graph Indicator:{} Graph Labels:{} Node Labels (Properties.. should match NGI):{} Edge Labels (Properties.. should match AE):{}'.format(total1,total2,total3,total4,total5))
 #print('Generating embeddings took {} seconds.'.format(end - start))
 f1.close()
 f2.close()
