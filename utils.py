@@ -251,7 +251,7 @@ for wx in actualCometOutput:
 		edg = edge.split(' ')
 		f1.write('{}, {}\n'.format(edg[0],edg[2])) #Adjacency
 		f2.write('{}\n'.format(counter)) #Which graph?
-		f5.write('{}\n'.format(edg[1]))
+		f5.write('{}\n'.format(str(int(edg[1])-1)))
 	f3.write('{}\n'.format(wx['principle'])) #What's the label/class for the graph
 
 	###Uncomment below if you want to generate embeddings for each separate edgelist (probably dont) #########
