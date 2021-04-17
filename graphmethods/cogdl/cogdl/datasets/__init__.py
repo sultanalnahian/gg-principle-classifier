@@ -84,7 +84,7 @@ SUPPORTED_DATASETS = {
     "ogbn-arxiv": "cogdl.datasets.ogb",
     "ogbn-products": "cogdl.datasets.ogb",
     "ogbn-proteins": "cogdl.datasets.ogb",
-    "ogbn-mag": "cogdl.datasets.pyg_ogb",
+    "ogbn-mag": "cogdl.datasets.ogb",
     "ogbn-papers100M": "cogdl.datasets.ogb",
     "ogbg-molbace": "cogdl.datasets.ogb",
     "ogbg-molhiv": "cogdl.datasets.ogb",
@@ -115,12 +115,12 @@ SUPPORTED_DATASETS = {
     "han-acm": "cogdl.datasets.han_data",
     "han-dblp": "cogdl.datasets.han_data",
     "han-imdb": "cogdl.datasets.han_data",
-    "principles": "cogdl.datasets.tu_data",
     "mutag": "cogdl.datasets.tu_data",
     "imdb-b": "cogdl.datasets.tu_data",
     "imdb-m": "cogdl.datasets.tu_data",
     "collab": "cogdl.datasets.tu_data",
     "proteins": "cogdl.datasets.tu_data",
+    "principles": "cogdl.datasets.tu_data",
     "reddit-b": "cogdl.datasets.tu_data",
     "reddit-multi-5k": "cogdl.datasets.tu_data",
     "reddit-multi-12k": "cogdl.datasets.tu_data",
@@ -140,4 +140,5 @@ SUPPORTED_DATASETS = {
     "chem": "cogdl.datasets.strategies_data",
     "bace": "cogdl.datasets.strategies_data",
     "bbbp": "cogdl.datasets.strategies_data",
+
 }

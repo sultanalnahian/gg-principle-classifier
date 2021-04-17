@@ -192,10 +192,11 @@ for filename in os.listdir('./data/class-comet-tuples'):
 				else:
 					if idf <= 4:
 						t1 = "Others"
-						tups.append((t1,idf-1,f))
+						tups.append((t1,idf-2,f))
 					else:
 						assert(idf != 0)
-						tups.append((t1,idf-1,f)) #To account for new principle column
+						assert(idf-2 != 9)
+						tups.append((t1,idf-2,f)) #To account for new principle column
 
 		t['tuples'] = tups
 		if len(tups) > mostRelations:
@@ -206,12 +207,12 @@ for filename in os.listdir('./data/class-comet-tuples'):
 
 print('----------------------------------')
 so = extractWordListFromStruct(actualCometOutput)
-print(so)
+#print(so)
 print('Number of unique words: {}'.format(len(so)))
 print('----------------------------------')
 do = mapWordsToUniqueIntegers(so,actualCometOutput)
 #print('Word to integer map: {}'.format(do))
-
+print(do)
 
 start = time.time()
 
@@ -249,57 +250,95 @@ f5 = open('./data/tu-format/principles_edge_labels.txt','a')
 # 	total4 += 1 #Just label the nodes with their id
 
 nodeIDmap = {}
-counter = 0
+counter = 1
 nodeidcounter = 1
 
 for wx in actualCometOutput:
 	#print(wx)
 
-	counter += 1
-	#print(str(counter))
+	
+
 	wf = convertCometEdgesToWeightAndFormat(wx['tuples'],  do )
-	#print(len(wf))
-	for edge in wf:
-		edg = edge.split(' ')
-		if edg[0] in nodeIDmap and edg[2] in nodeIDmap:
-			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]])) #Adjacency
-			total1 += 1
-		elif edg[0] in nodeIDmap and edg[2] not in nodeIDmap:
-			nodeIDmap[edg[2]] = nodeidcounter
-			nodeidcounter += 1
-			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
-			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
-			f4.write('{}\n'.format(edg[2]))
-			total1 += 1
-			total2 += 1
-			total4 += 1
-		elif edg[0] not in nodeIDmap and edg[2] in nodeIDmap:
+	if wf != []:
+		for edge in wf:
+			edg = edge.split(' ')
 			nodeIDmap[edg[0]] = nodeidcounter
+			firstnode = nodeidcounter
+			#print(nodeidcounter)
 			nodeidcounter += 1
-			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
-			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
-			f4.write('{}\n'.format(edg[0]))
-			total1 += 1
-			total2 += 1
-			total4 += 1
-		else:
-			nodeIDmap[edg[0]] = nodeidcounter
-			f4.write('{}\n'.format(edg[0]))
+			#if nodeidcounter == 169 or nodeidcounter == 170:
+				#print('{}-{}-{}'.format(edg[0],edg[1],edg[2]))
+			secondnode = nodeidcounter
+			#print(nodeidcounter)
 			nodeidcounter += 1
+			#print(nodeidcounter)
+			if nodeidcounter == 170 or nodeidcounter == 171:
+				print('{}-{}-{}'.format(edg[0],edg[1],edg[2]))
+				#print(do[str(edg[0])])
+				#print(do[str(edg[2])])
+			f1.write('{},{}\n'.format(firstnode,secondnode))
+			f4.write('{}\n'.format(edg[0]))
+			f2.write('{}\n'.format(counter))
+			
 			nodeIDmap[edg[2]] = nodeidcounter
 			f4.write('{}\n'.format(edg[2]))
-			nodeidcounter += 1
-			f1.write('{}, {}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
-			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
-			f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+			f2.write('{}\n'.format(counter))
+			
+			
+			#f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+
 			total1 += 1
 			total2 += 2
 			total4 += 2
 
-		f5.write('{}\n'.format(str(int(edg[1])-1))) #edge attribute
-		total5 += 1
-	f3.write('{}\n'.format(wx['principle']))
-	total3 += 1 #What's the label/class for the graph
+			f5.write('{}\n'.format(str(int(edg[1])))) #edge attribute
+			total5 += 1
+		f3.write('{}\n'.format(wx['principle']))
+		total3 += 1 #What's the label/class for the graph
+		counter += 1
+	# for edge in wf:
+	# 	edg = edge.split(' ')
+	# 	if edg[0] in nodeIDmap and edg[2] in nodeIDmap:
+	# 		f1.write('{},{}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]])) #Adjacency
+	# 		total1 += 1
+	# 	elif edg[0] in nodeIDmap and edg[2] not in nodeIDmap:
+	# 		nodeIDmap[edg[2]] = nodeidcounter
+	# 		nodeidcounter += 1
+	# 		f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+	# 		f1.write('{},{}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
+	# 		f4.write('{}\n'.format(edg[2]))
+	# 		total1 += 1
+	# 		total2 += 1
+	# 		total4 += 1
+	# 	elif edg[0] not in nodeIDmap and edg[2] in nodeIDmap:
+	# 		nodeIDmap[edg[0]] = nodeidcounter
+	# 		nodeidcounter += 1
+	# 		f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+	# 		f1.write('{},{}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
+	# 		f4.write('{}\n'.format(edg[0]))
+	# 		total1 += 1
+	# 		total2 += 1
+	# 		total4 += 1
+	# 	else:
+	# 		nodeIDmap[edg[0]] = nodeidcounter
+	# 		f4.write('{}\n'.format(edg[0]))
+	# 		nodeidcounter += 1
+	# 		nodeIDmap[edg[2]] = nodeidcounter
+	# 		f4.write('{}\n'.format(edg[2]))
+	# 		nodeidcounter += 1
+	# 		f1.write('{},{}\n'.format(nodeIDmap[edg[0]],nodeIDmap[edg[2]]))
+	# 		f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+	# 		f2.write('{}\n'.format(counter)) #this new node belongs to which graph?
+	# 		total1 += 1
+	# 		total2 += 2
+	# 		total4 += 2
+
+	# 	f5.write('{}\n'.format(str(int(edg[1])))) #edge attribute
+	# 	total5 += 1
+	# f3.write('{}\n'.format(wx['principle']))
+	# total3 += 1 #What's the label/class for the graph
+
+	
 
 	###Uncomment below if you want to generate embeddings for each separate edgelist (probably dont) #########
 
